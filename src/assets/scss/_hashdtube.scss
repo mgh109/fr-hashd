@@ -1,0 +1,70 @@
+.hashtube__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    z-index: 100;
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+  
+      .search-form {
+        display: flex;
+        align-items: center;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 5px 10px;
+  
+        input[type='text'] {
+          border: none;
+          background-color: transparent;
+          padding: 5px;
+          font-size: 16px;
+          color: #333333;
+          outline: none;
+          width: clamp(100px, 28vw, 19rem);
+        }
+  
+        button[type='submit'] {
+          background-color: transparent;
+          border: none;
+          margin-left: 5px;
+          padding-top: 5px;
+          cursor: pointer;
+          color: #8a8a8a;
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  
+    .navbar-center {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  
+    .navbar-right {
+      display: flex;
+  
+      a {
+        color: #333333;
+        font-size: 16px;
+        padding: 0 10px;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .hashtube__navbar__mobile {
+    z-index: 100;
+  }

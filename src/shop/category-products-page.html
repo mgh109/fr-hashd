@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category products</title>
+    <link rel="stylesheet" href="../../dist/assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../dist/assets/images/image-fococlipping-standard.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../../dist/assets/css/style.min.css" />
+</head>
+<body dir="rtl">
+    <!-- navbar mobile -->
+    <nav dir="rtl" class="shop-nav">
+      <div
+        class="navbar d-flex d-md-none justify-content-between align-items-center position-fixed px-3"
+      >
+        <div class="overlay"></div>
+        <div class="menu">
+          <div class="hamberger position-relative">
+            <span class="hamber hamber-1"></span>
+            <span class="hamber hamber-2"></span>
+            <span class="hamber hamber-3"></span>
+          </div>
+          <ul class="wrapper-item position-fixed text-right pr-4">
+            <div
+              class="user position-absolute text-center w-100 d-flex align-items-center"
+            >
+              <img
+                class="img-fluid rounded-lg"
+                src="../../dist/assets/images/logo-edited.png"
+                alt="user"
+              /><span class="mx-3 p-0 mb-0"
+                >محمد عرفان گائینی
+                <p class="m-0"><a href="#">09123456789</a></p></span
+              >
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between pb-5 align-content-between h-100"
+            >
+              <div>
+                <li class="item item-2 d-flex align-items-center mt-3 pb-2">
+                  <span class="material-symbols-outlined px-2">
+                    storefront
+                    </span>
+                    <a href="shop.html">صفحة المتجرالرئيسية </a>
+                </li>
+                <li class="item item-3 d-flex align-items-center mt-1 pb-2">
+                  <span class="material-symbols-outlined px-2">
+                    local_mall
+                    </span>
+                    <a href="cart-page.html">سلة المشتريات </a>
+                </li>
+                <li class="item item-4 pb-2 d-flex align-items-center mt-1">
+                  <span class="material-symbols-outlined px-2">dashboard</span>
+                <a href="category-page.html">فئات المنتج</a>
+                </li>
+                <li class="item item-5 pb-2 d-flex align-items-center mt-1">
+                  <span class="material-symbols-outlined px-2">
+                    menu_book
+                    </span>
+                    <a href="articles-page.html">المقالات</a>
+                </li>
+                <li class="item item-6 pb-2 d-flex align-items-center mt-1">
+                  <span class="material-symbols-outlined px-2">
+                    bookmarks
+                    </span>
+                    <a href="favorites-page.html">منتجات المحددة </a>
+                </li>
+              </div>
+              <div>
+                <li class="item item-1 pb-2 d-flex align-items-center">
+                  <span class="material-symbols-outlined px-2">settings</span
+                  ><a href="#">الإعدادات</a>
+                </li>
+                <li class="item item-2 d-flex align-items-center pb-2 exit">
+                  <i class="fa-solid fa-arrow-right-from-bracket px-2"></i
+                  ><a href="#">خروج</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img
+              src="../../dist/assets/images/image-fococlipping-standard.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="item item-2 d-flex align-items-center exit">
+          <button type="button" onclick="parent.history.back()">
+            <i class="fa-solid fa-arrow-left px-2"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar desktop -->
+    <nav dir="ltr" class="navbar-desktop shop-navbar-desktop w-100 pt-3 pb-1 px-3 shadow-none rounded-0 d-none d-md-block position-fixed w-100">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="right-nav d-flex">
+        <div class="user text-center d-flex align-items-center">
+          <img class="img-fluid rounded-lg" src="../../dist/assets/images/logo-edited.png" alt="user">
+          <span class="mx-2 p-0 mb-0">محمد محمدی
+            <p class="m-0">
+              <a href="#" id="persian">09123456789</a>
+            </p>
+          </span>
+        </div>
+        <div class="ml-2 d-flex align-items-center">
+          <a href="cart-page.html" class="cart-link text-center position-relative pt-1"><div class="badge shop-badge badge-danger position-absolute">5</div><span class="material-symbols-outlined">local_mall</span></a>
+        <i class="fa-solid ml-2 fa-arrow-right-from-bracket d-flex justify-content-center align-items-center px-2 "></i>
+        </div>
+      </div>
+      <div class="left-nav">
+        <div class="shop-nav d-flex">       
+          <div
+        class="search-box d-flex align-items-center w-100 position-relative mt-md-0 px-3 px-md-0"
+      >
+        <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+        <input
+          dir="rtl"
+          type="search"
+          class="search-input w-100"
+          placeholder="يبحث ..."
+        />
+          </div>
+          <div class="logo ml-3">
+        <a href="../../index.html"
+          ><img
+            src="../../dist/assets/images/image-fococlipping-standard.png"
+            alt="logo"
+        /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div dir="rtl" class="wrapper-item mt-1 text-right d-flex justify-content-between align-items-center">
+      <ul class="d-flex align-items-center mb-0 ">
+        <li class="item"><a class="active-item" href="shop.html">صفحة المتجرالرئيسية </a></li>
+        <li class="item"><a href="cart-page.html">سلة المشتريات </a></li>
+        <li class="item"><a href="category-page.html">فئات المنتج</a></li>
+        <li class="item"><a href="articles-page.html">اللمقالات</a></li>
+        <li class="item"><a href="favorites-page.html">منتجات المحددة </a></li>
+      </ul>
+      <div dir="ltr" class="date">
+        <time>1401/10/10  10:10</time>
+      </div>
+    </div>
+    </nav>
+
+      <section class="category-products my-5 py-4 my-md-0 py-md-0 px-3 text-right">
+        <div class="pt-0 pt-md-5"></div>
+        <div class="mt-0 mt-md-5"></div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-none mb-0 d-md-flex">
+          <li class="breadcrumb-item"> <a href="shop.html">  نام وبسایت  </a> </li>
+          <li class="breadcrumb-item"> <a href="category-page.html"> / فئات المنتج  </a> </li>
+          <li class="breadcrumb-item active active-nav"><a style="color: #6a994e!important;" href="#">المتبرکات</a></li>
+        </ol>
+      </nav>
+        <div class="title d-flex justify-content-between align-items-center">
+            <p class="m-0 custom-title-contents">المتبرکات</p>
+          </div>
+        
+          <div dir="rtl" class="d-md-flex flex-wrap wrapper-card-products">
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (4).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 23*23 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>89.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (1).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 23*23 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>89.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (3).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 32*25 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>117.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (2).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (5).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (2).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (3).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 32*25 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>117.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (4).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (5).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (1).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 23*23 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>89.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (4).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (3).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 32*25 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>117.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (5).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 20*20 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>66.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+            <div class="card-products d-flex d-md-block flex-md-column p-2 mb-3 position-relative">
+              <a href="product-page.html" class="stretched-link"></a>
+                <div class="card-img px-0 col-4 col-md-12">
+                    <img class="img-fluid" src="../../dist/assets/images/c-products-Picture (1).png" alt="">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between p-0 col-8 col-md-12 mt-md-2 mr-3 mr-md-0">
+                    <div class="card-title mb-4 mb-md-2 text-right">
+                        <p class="mb-0 mb-md-2">قاب فرش حرم امام رضا (ع) 23*23 سانتی متر</p>
+                    </div>
+                    <div class="footer-item d-flex flex-md-row-reverse justify-content-between pl-4 pl-md-3">
+                        <p class="price mb-0"><span>89.000</span> تومان</p>
+                        <img src="../../dist/assets/images/Add.png" alt="" />
+                      </div>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <div dir="ltr" class="d-none d-md-flex justify-content-center align-items-center mt-2" aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item mr-1">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">30</a></li>
+          <li class="page-item"><a class="page-link" href="#">29</a></li>
+          <li class="page-item"><a class="page-link" href="#">28</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item active"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <footer dir="rtl" class="w-100 d-none d-md-block second-main-crl text-right px-3 mt-2"><small>جميع حقوق هذه المنصة مملوكة لـ ...</small></footer>
+
+      <footer class="fix-footer pb-1 d-md-none position-fixed d-flex align-items-center bg-white justify-content-center"> 
+        <a href="shop.html" class="d-flex flex-column text-center "><div class="footer-icons mt-2 mb-2"><span class="material-symbols-outlined">storefront</span></div><div class="foo-1 text-center show-content d-flex justify-content-center align-items-center w-100">فروشگاه</div></a>
+        <a href="cart-page.html" class="d-flex flex-column text-center position-relative pt-1"><div class="badge shop-badge badge-danger">5</div><span class="material-symbols-outlined">local_mall</span><div class="foo-2 text-center my-group d-flex justify-content-center align-items-center  w-100">سبد خرید</div></a>
+        <a href="category-page.html" class="d-flex flex-column text-center pt-1"><span class="material-symbols-outlined ">dashboard</span><div class="foo-3 text-center all-group d-flex justify-content-center align-items-center w-100 ">دسته بندی</div></a>
+      </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.min.js"></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/assets/js/main.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        ConvertNumberToPersion();
+      });
+
+      function ConvertNumberToPersion() {
+        persian = {
+          0: '۰',
+          1: '۱',
+          2: '۲',
+          3: '۳',
+          4: '۴',
+          5: '۵',
+          6: '۶',
+          7: '۷',
+          8: '۸',
+          9: '۹',
+        };
+        function traverse(el) {
+          if (el.nodeType == 3) {
+            var list = el.data.match(/[0-9]/g);
+            if (list != null && list.length != 0) {
+              for (var i = 0; i < list.length; i++)
+                el.data = el.data.replace(list[i], persian[list[i]]);
+            }
+          }
+          for (var i = 0; i < el.childNodes.length; i++) {
+            traverse(el.childNodes[i]);
+          }
+        }
+        traverse(document.body);
+      }
+    </script>
+</body>
+</html>

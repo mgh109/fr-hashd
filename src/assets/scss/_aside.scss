@@ -1,0 +1,64 @@
+aside.aside {
+    background-color: #efefef!important;
+    margin-bottom: 2rem!important;
+    right: .8rem;
+    height: 93%!important;
+    z-index: 113;
+    overflow: hidden;
+    .logo {
+        margin-bottom: .5rem;
+        img {
+            width: 55px;
+        }
+    }
+    div.fix-footer {
+        background-color: #fff!important;
+        height: auto;
+        .active-footer {
+            &::before,&::after {
+                display: none;
+            }
+        }
+        div {
+            font-weight: normal;
+        }
+        .custom-badge {
+            right: 4rem;
+        }
+    }
+    span {
+        font-size: 1.3rem!important;
+    }
+    a {
+        font-size: .85rem!important;
+        &:hover {
+            color: $hover-crl!important;
+        }
+    }
+    .wrapper-items-nav{
+        a {
+            color: $text-crl;
+        }
+        .chevron {
+            span {
+                font-size: 1rem!important;
+            }
+        }
+    }
+    .sevrices-wrapper {
+        .services {
+            cursor: pointer;
+        }
+        ul {
+            display: none;
+        }
+        .services .chevron {
+            transition: 400ms;
+            width: 24px;
+            height: 24px;
+        }
+        // &:hover .services .chevron {
+        //     rotate: -90deg;
+        // }
+    }
+}

@@ -1,0 +1,21 @@
+.products-categorization {
+    .product-card {
+        font-size: 13px;
+    }
+    .wrapper {
+        gap: 2.4%;
+        text-align: center;
+    }
+}
+
+.shop-titles {
+    a {
+        color: $green-crl;
+    }
+}
+
+@media screen and (min-width: 455px) {
+    .wrapper {
+        justify-content: start!important;
+    }
+}

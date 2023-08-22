@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page</title>
+    <link rel="stylesheet" href="../../dist/assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../dist/assets/images/image-fococlipping-standard.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../../dist/assets/plugins/zoomy.css" />
+    <link rel="stylesheet" href="../../dist/assets/css/style.min.css" />
+  </head>
+  <body dir="rtl">
+   <!-- navbar mobile -->
+   <nav dir="rtl" class="shop-nav">
+    <div
+      class="navbar d-flex d-md-none justify-content-between align-items-center position-fixed px-3"
+    >
+      <div class="overlay"></div>
+      <div class="menu">
+        <div class="hamberger position-relative">
+          <span class="hamber hamber-1"></span>
+          <span class="hamber hamber-2"></span>
+          <span class="hamber hamber-3"></span>
+        </div>
+        <ul class="wrapper-item position-fixed text-right pr-4">
+          <div
+            class="user position-absolute text-center w-100 d-flex align-items-center"
+          >
+            <img
+              class="img-fluid rounded-lg"
+              src="../../dist/assets/images/logo-edited.png"
+              alt="user"
+            /><span class="mx-3 p-0 mb-0"
+              >محمد عرفان گائینی
+              <p class="m-0"><a href="#">09123456789</a></p></span
+            >
+          </div>
+          <div
+            class="d-flex flex-column justify-content-between pb-5 align-content-between h-100"
+          >
+            <div>
+              <li class="item item-2 d-flex align-items-center mt-3 pb-2">
+                <span class="material-symbols-outlined px-2">
+                  storefront
+                  </span>
+                  <a href="shop.html">صفحة المتجرالرئيسية </a>
+              </li>
+              <li class="item item-3 d-flex align-items-center mt-1 pb-2">
+                <span class="material-symbols-outlined px-2">
+                  local_mall
+                  </span>
+                  <a href="cart-page.html">سلة المشتريات </a>
+              </li>
+              <li class="item item-4 pb-2 d-flex align-items-center mt-1">
+                <span class="material-symbols-outlined px-2">dashboard</span>
+              <a href="category-page.html">فئات المنتج</a>
+              </li>
+              <li class="item item-5 pb-2 d-flex align-items-center mt-1">
+                <span class="material-symbols-outlined px-2">
+                  menu_book
+                  </span>
+                  <a href="articles-page.html">المقالات</a>
+              </li>
+              <li class="item item-6 pb-2 d-flex align-items-center mt-1">
+                <span class="material-symbols-outlined px-2">
+                  bookmarks
+                  </span>
+                  <a href="favorites-page.html">منتجات المحددة </a>
+              </li>
+            </div>
+            <div>
+              <li class="item item-1 pb-2 d-flex align-items-center">
+                <span class="material-symbols-outlined px-2">settings</span
+                ><a href="#">الإعدادات</a>
+              </li>
+              <li class="item item-2 d-flex align-items-center pb-2 exit">
+                <i class="fa-solid fa-arrow-right-from-bracket px-2"></i
+                ><a href="#">خروج</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="../../index.html"
+          ><img
+            src="../../dist/assets/images/image-fococlipping-standard.png"
+            alt="logo"
+        /></a>
+      </div>
+      <div class="item item-2 d-flex align-items-center exit">
+        <button type="button" onclick="parent.history.back()">
+          <i class="fa-solid fa-arrow-left px-2"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar desktop -->
+  <nav dir="ltr" class="navbar-desktop shop-navbar-desktop w-100 pt-3 pb-1 px-3 shadow-none rounded-0 d-none d-md-block position-fixed w-100">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="right-nav d-flex">
+        <div class="user text-center d-flex align-items-center">
+          <img class="img-fluid rounded-lg" src="../../dist/assets/images/logo-edited.png" alt="user">
+          <span class="mx-2 p-0 mb-0">محمد محمدی
+            <p class="m-0">
+              <a href="#" id="persian">09123456789</a>
+            </p>
+          </span>
+        </div>
+        <div class="ml-2 d-flex align-items-center">
+          <a href="cart-page.html" class="cart-link text-center position-relative pt-1"><div class="badge shop-badge badge-danger position-absolute">5</div><span class="material-symbols-outlined">local_mall</span></a>
+        <i class="fa-solid ml-2 fa-arrow-right-from-bracket d-flex justify-content-center align-items-center px-2 "></i>
+        </div>
+      </div>
+      <div class="left-nav">
+        <div class="shop-nav d-flex">       
+          <div
+        class="search-box d-flex align-items-center w-100 position-relative mt-md-0 px-3 px-md-0"
+      >
+        <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+        <input
+          dir="rtl"
+          type="search"
+          class="search-input w-100"
+          placeholder="يبحث ..."
+        />
+          </div>
+          <div class="logo ml-3">
+        <a href="../../index.html"
+          ><img
+            src="../../dist/assets/images/image-fococlipping-standard.png"
+            alt="logo"
+        /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div dir="rtl" class="wrapper-item mt-1 text-right d-flex justify-content-between align-items-center">
+      <ul class="d-flex align-items-center mb-0 ">
+        <li class="item"><a class="active-item" href="shop.html">صفحة المتجرالرئيسية </a></li>
+        <li class="item"><a href="cart-page.html">سلة المشتريات </a></li>
+        <li class="item"><a href="category-page.html">فئات المنتج</a></li>
+        <li class="item"><a href="articles-page.html">المقالات</a></li>
+        <li class="item"><a href="favorites-page.html">منتجات المحددة </a></li>
+      </ul>
+      <div dir="ltr" class="date">
+        <time>1401/10/10  10:10</time>
+      </div>
+    </div>
+  </nav>
+
+    <section class="container-fluid mt-md-0 text-right mb-md-0 pt-md-5">
+      <div class="mt-0 mt-md-5"></div>
+        <div class="product-picture col-xl-8 d-xl-flex">
+          <div class="d-md-flex">
+              <div class="position-relative">
+              <div class="favorite position-absolute">
+                  <i class="fa-regular fa-bookmark"></i>
+              </div>
+              <div dir="rtl" class="d-flex flex-column flex-xl-row-reverse justify-content-between position-relative text-center" id="gallery" >
+                  <img src="../../dist/assets/images/Picture [limited area].png" alt="">
+                  <img src="../../dist/assets/images/216x216.jpg" alt="">
+                  <img src="../../dist/assets/images/216x216 (1).jpg" alt="">
+                  <img src="../../dist/assets/images/Picture [limited area] (3).png].png" alt="">
+                  <img src="../../dist/assets/images/Picture [limited area] (4).png].png" alt="">
+              </div>
+              </div>
+              <div class="mr-md-5 pr-md-4">
+                <div class="product-title">
+                  <h3 class="mb-0">پوتین ترکینگ شرپا مدل انرژی</h3>
+              </div>
+              <div class="atttibute">
+                  <div class="title d-flex justify-content-between align-items-center mt-3 mb-1"><p class="m-0">مواصفات المنتج</p></div>
+                  <ul class="mb-1">
+                      <li class="mb-1">أسلوب : <span>نظامی</span></li>
+                      <li class="mb-1">الجنس : <span>چرم طبیعی اصل (گاوی)</span></li>
+                      <li class="mb-1">صنع في: <span>ایران</span></li>
+                      <li class="mb-1">مقاس : <span>39 - 44</span></li>
+                      <li class="mb-1">الجنس : <span>چرم طبیعی اصل (گاوی)</span></li>
+                      <li class="mb-1">ملائم : <span>کوهنوردان</span></li>
+                      <li class="mb-1">أسلوب : <span>نظامی</span></li>
+                      <li class="mb-1">الجنس : <span>چرم طبیعی اصل (گاوی)</span></li>
+                      <li class="mb-1">صنع في : <span>ایران</span></li>
+                  </ul>
+                  <!-- <span class="more"><i class="fa-solid fa-plus"></i>مشاهده بیشتر</span> -->
+              </div>
+              </div>
+          </div>
+            <div class="add-cart d-flex justify-content-between justify-content-xl-center flex-xl-column-reverse align-items-center position-fixed col-xl-4">
+              <div class="cart d-flex align-items-center justify-content-md-center">
+                <div class="add mx-2">اضافة لسلة الشراء </div>
+                <div class="count d-none align-items-center">
+                  <i class="fa-solid fa-plus increment"></i>
+                  <div class="mx-3"></div>
+                  <i class="fa-solid fa-minus decrement d-none"></i>
+                  <i class="fa-solid fa-trash remove"></i>
+                </div>
+              </div>
+              <span class="price mb-md-3 mt-md-2"><span>1.050.000</span> تومان</span>
+            </div>
+        </div>
+        <div class="description mt-1 px-2">
+            <div class="title d-flex justify-content-between align-items-center"><p class="m-0 custom-title-contents">شرح المنتج</p></div>
+            <p class="mb-1">کفش کوهنوردی شرپا با کیفیت بالا و طراحی زیبا، مناسب برای ترکینگ و هایکینگ می باشد. این کفش کوهنوردی با به کارگیری متریال ها مناسب و قالبی راحت، یک انتخابی مناسب و به صرفه برای کوهنوردان و طبیعت گردان می باشد. طرح زیبا و رنگ بندی های متنوع این کفش باعث شده کفش شرپا مدل انرژی برای هر صلیقه ای مورد پسند باشد. کفش کوهنوردی شرپا با کیفیت بالا و طراحی زیبا، مناسب برای ترکینگ و هایکینگ می باشد. این کفش کوهنوردی با به کارگیری متریال ها مناسب و قالبی راحت، یک انتخابی مناسب و به صرفه برای کوهنوردان و طبیعت گردان می باشد. طرح زیبا و رنگ بندی های متنوع این کفش باعث شده کفش شرپا مدل انرژی برای هر صلیقه ای مورد پسند باشد. کفش کوهنوردی شرپا با کیفیت بالا و طراحی زیبا، مناسب برای ترکینگ و هایکینگ می باشد. این کفش کوهنوردی با به کارگیری متریال ها مناسب و قالبی راحت، یک انتخابی مناسب و به صرفه برای کوهنوردان و طبیعت گردان می باشد. طرح زیبا و رنگ بندی های متنوع این کفش باعث شده کفش شرپا مدل انرژی برای هر صلیقه ای مورد پسند باشد. کفش کوهنوردی شرپا با کیفیت بالا و طراحی زیبا، مناسب برای ترکینگ و هایکینگ می باشد. این کفش کوهنوردی با به کارگیری متریال ها مناسب و قالبی راحت، یک انتخابی مناسب و به صرفه برای کوهنوردان و طبیعت گردان می باشد. طرح زیبا و رنگ بندی های متنوع این کفش باعث شده کفش شرپا مدل انرژی برای هر صلیقه ای مورد پسند باشد. کفش کوهنوردی شرپا با کیفیت بالا و طراحی زیبا، مناسب برای ترکینگ و هایکینگ می باشد. این کفش کوهنوردی با به کارگیری متریال ها مناسب و قالبی راحت، یک انتخابی مناسب و به صرفه برای کوهنوردان و طبیعت گردان می باشد. طرح زیبا و رنگ بندی های متنوع این کفش باعث شده کفش شرپا مدل انرژی برای هر صلیقه ای مورد پسند باشد. </p>
+            <!-- <span class="more"><i class="fa-solid fa-plus"></i>مشاهده بیشتر</span> -->
+        </div>
+        <div class="comments-registered mb-0 mt-3">
+            <p dir="rtl" class="text-right custom-title-contents m-0 font-weight-bolder">التعليقات مسجلة</p>
+            <div class="wrapper-comment-user" style="margin-bottom: 0!important;">
+                <p class="user-name m-0 pr-1">محمد محمدی</p>
+                <p class="comment m-0 my-2 pr-2">المقال كان شاملا وكاملا جدا شكرا لك على النشر</p>
+                <div class="other-comment mr-auto other-comment-custom p-2">
+                    <div class=" p-1">
+                        <div class="answer-comment text-left py-1 px-2"><i class="fa-regular fa-comments pl-2"></i>الرد على هذا التعليق</div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-comment-user mt-3 pb-2" style="margin-bottom: 0!important;">
+                <p class="user-name m-0 pr-1">سعید سعیدی</p>
+                <p class="comment m-0 my-2 pr-2">المقال كان شاملا وكاملا جدا شكرا لك على النشر؟ <i class="fa-regular fa-comments pr-2"></i></p>
+                <div class="wrapper-comment-user wrapper-comment-user-answer m-2" style="margin-bottom: 0!important;">
+                    <p class="user-name m-0 pr-1">محمد محمدی</p>
+                    <p class="comment m-0 my-2 px-2">المقال كان شاملا وكاملا جدا شكرا لك على النشرالمقال كان شاملا وكاملا جدا شكرا لك على النشر المقال كان شاملا وكاملا جدا شكرا لك على النشر</p>
+                    <div class="other-comment mr-auto other-comment-custom p-2">
+                        <div class=" p-1 reply">
+                            <div class="answer-comment text-left py-1 px-2"><i class="fa-regular fa-comments pl-2"></i>الرد على هذا التعليق</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="comments mt-3" >
+    <form action="" name="add-comment" method="" id="form-comment" class="text-right w-100">
+        <label dir="rtl" id="comment" class="custom-title-contents mt-2 mb-0 ">تعليق</label>
+        <textarea class="comment-area p-1 d-block w-100" dir="rtl" name="comment" id="" cols="35" rows="4" placeholder="عبر عن رأيك حول هذا المقال..."></textarea>
+        <div class="btn-form d-flex flex-column flex-md-column-reverse justify-content-between align-items-center"><button class="confirm-btn text-center p-2 mt-2 w-100" type="button">تسجيل التعليقات وإرسال التعليقات</button><div class="ml-auto mt-md-2">تسجيل تعليق يعني الموافقة مع <span>قواعد نشر الموقع</span> هو </div></div>
+    </form>
+        </div> 
+    </section>
+
+    <footer dir="rtl" class="w-100 d-none d-md-block second-main-crl text-right px-3 mt-4"><small>جميع حقوق هذه المنصة مملوكة لـ ...</small></footer>
+
+    <footer class="fix-footer pb-1 d-xl-none position-fixed d-flex align-items-center bg-white justify-content-center"> 
+      <a href="shop.html" class="d-flex flex-column text-center "><div class="footer-icons mt-2 mb-2"><span class="material-symbols-outlined">storefront</span></div><div class="foo-1 text-center show-content d-flex justify-content-center align-items-center w-100">فروشگاه</div></a>
+      <a href="cart-page.html" class="d-flex flex-column text-center position-relative pt-1"><div class="badge shop-badge badge-danger">5</div><span class="material-symbols-outlined">local_mall</span><div class="foo-2 text-center my-group d-flex justify-content-center align-items-center  w-100">سبد خرید</div></a>
+      <a href="category-page.html" class="d-flex flex-column text-center pt-1"><span class="material-symbols-outlined ">dashboard</span><div class="foo-3 text-center all-group d-flex justify-content-center align-items-center w-100 ">دسته بندی</div></a>
+    </footer>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.min.js"></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/assets/plugins/zoomy.js"></script>
+    <script src="../../dist/assets/js/main.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        ConvertNumberToPersion();
+      });
+
+      function ConvertNumberToPersion() {
+        persian = {
+          0: '۰',
+          1: '۱',
+          2: '۲',
+          3: '۳',
+          4: '۴',
+          5: '۵',
+          6: '۶',
+          7: '۷',
+          8: '۸',
+          9: '۹',
+        };
+        function traverse(el) {
+          if (el.nodeType == 3) {
+            var list = el.data.match(/[0-9]/g);
+            if (list != null && list.length != 0) {
+              for (var i = 0; i < list.length; i++)
+                el.data = el.data.replace(list[i], persian[list[i]]);
+            }
+          }
+          for (var i = 0; i < el.childNodes.length; i++) {
+            traverse(el.childNodes[i]);
+          }
+        }
+        traverse(document.body);
+      }
+    </script>
+    <script>
+      var urls = ['../../dist/assets/images/Picture [limited area].png', '../../dist/assets/images/216x216.jpg', '../../dist/assets/images/216x216 (1).jpg', '../../dist/assets/images/216x216 (2).jpg', '../../dist/assets/images/Picture [limited area].png'];
+
+      $('#gallery').zoomy(urls, {
+        maxWidth: 600,
+        height: 450,
+      });
+    </script>
+  </body>
+</html>

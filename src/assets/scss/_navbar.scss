@@ -1,0 +1,326 @@
+// navbar
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba($color: #000000, $alpha: 6%);
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 980;
+    .menu {
+        z-index: 990;
+        .hamberger {
+            z-index: 999;
+            margin: 0 .5rem .4rem 0;
+            cursor: pointer;
+            span {
+                width: 2rem;
+                height: 2px;
+                margin-block: .25rem;
+                background-color: #6d6d6d;
+                display: block;
+                transition: 300ms ease;
+                transition-delay: 200ms;
+            }
+        }
+        .wrapper-item {
+            top: 0;
+            right: 0;
+            transform: translateX(400px);
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            color: $text-crl;
+            width: 75%;
+            height: 100%;
+            padding: 7rem 0 0 0;
+            transition: 450ms ease;
+            visibility: hidden;
+            .user {
+                top: 4em;
+                right: 2rem;
+                color: #225;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -1.2rem;
+                    right: 2%!important;
+                    background-color: rgb(184, 184, 184);
+                    width: 70%;
+                    height: 1px;
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+                span {
+                    color: $text-crl;
+                    margin-top: .5rem!important;
+                    font-weight: 700;
+                    font-size: clamp(14px, 1vw, 1rem);
+                     p {
+                        font-family: sans-serif;
+                        font-weight: 200;
+                        letter-spacing: 2px;
+                        a {
+                            color: $gray-crl;
+                        }
+                     }
+                }
+            }
+            .item {
+                margin-block: .95rem;
+                color: $text-crl;
+                transform: translateY(50px);
+                font-size: clamp(15px, 1vw, 1rem);
+                font-weight: 700;
+                i {
+                    font-size: 1.1rem;
+                }
+                &:hover {
+                    color: $hover-crl;
+                }
+                &:first-child {
+                    animation-delay: 60ms;
+                    margin-top: 2rem;
+                }
+                &:nth-child(2) {
+                    i {
+                        padding-bottom: 5px;
+                    }
+                }
+                &:nth-child(3) {
+                    animation-delay: 120ms;
+                }
+                &:nth-child(4) {
+                    animation-delay: 180ms;
+                }
+                &:nth-child(4) {
+                    animation-delay: 240ms;
+                }
+                &:nth-child(5) {
+                    animation-delay: 300ms;
+                }
+                .sevrices-wrapper {
+                    .services {
+                        cursor: pointer;
+                    }
+                    ul {
+                        display: none;
+                        background-color: #efefef;
+                        border-radius: 4px;
+                        padding: 2px;
+                        margin-top: 5px;
+                    }
+                    .services .chevron {
+                        transition: 400ms;
+                        padding-top: 3px;
+                        width: 24px;
+                        height: 24px;
+                        span {
+                            font-size: 18px;
+                            
+                        }
+                    }
+                }
+            }
+            .exit {
+                color: $red-crl!important;
+                a {
+                    color: $red-crl;
+                }
+            }
+            a {
+                color: $text-crl;
+            }
+        }
+        .open-menu {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    }
+
+    .logo {
+        width: 50px!important;
+    }
+
+    .search-box {
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .35);
+        border-radius: 20px;
+        .search-input {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            width: 0;
+            transition: width 600ms ease,padding 450ms ease;
+            color: #333;
+            order: -1;
+        }
+
+        .active-input {
+            width: 150px;
+            padding-inline: .7rem;
+        }
+
+        .search-btn {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+            border: 0;
+            background: #fff;
+            color: rgb(71, 71, 71);
+            i {
+                inset: 0;
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.427);
+        transition: 450ms ease;
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    
+    .open-overlay {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .exit {
+        font-size: 1.4rem;
+        color: $red-crl;
+    }
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.active-hamber-1{
+    transform: rotate(45deg) translate(-3px,-1px);
+    transform-origin: top ;
+}
+.active-hamber-2{
+    transform: rotate(-45deg) translate(0,3px);
+    transform-origin: left;
+}
+
+.active-hamber-3 {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.moveup-menu {
+    animation: moveUp 300ms forwards;
+}
+
+
+@keyframes moveUp {
+    to{transform: translateY(0);}
+}
+
+
+@media screen and (max-width: 993px) and (min-width: 769px)  {
+    .navbar-desktop {
+        width: 71%!important;
+    }
+}
+@media screen and (min-width: 769px) {
+    .navbar-desktop {
+        background-color: #efefef;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        left: 0;
+        width: 80.5%;
+        z-index: 110;
+        box-shadow: -10px -10px 0 19px #fff,
+        14px 9px 0 0 #fff,
+        11.4px -11px 0 0 #fff;
+       .right-nav {
+        .user {
+            color: #225;
+            border-right: 1px solid #d2d2d2;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%!important;
+            }
+            span {
+                color: $text-crl;
+                margin-top: .5rem!important;
+                font-weight: 700;
+                font-size: 10px;
+                 p {
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    a {
+                        color: $gray-crl;
+                    }
+                 }
+            }
+        }
+        .search-box {
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.255);
+            border-radius: 20px;
+            .search-input {
+                background-color: transparent;
+                border: 0;
+                outline: 0;
+                padding: 0;
+                width: 0;
+                transition: width 600ms ease,padding 450ms ease;
+                color: #333;
+            }
+    
+            .active-input {
+                width: 250px;
+                padding-inline: .5rem;
+            }
+    
+            .search-btn {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+                cursor: pointer;
+                border: 0;
+                color: rgb(71, 71, 71);
+            }
+        }
+       }
+       .left-nav {
+        cursor: pointer;
+        i {
+            color: #b10000;
+            
+        }
+       }
+    }
+}
+@media screen and (max-width: 385px) {
+    .active-input {
+        width: clamp(106px, 7.5vw, 7.7rem)!important;
+    }
+    .logo {
+        width: 60px!important;
+    }
+    .user {
+        right: clamp(8px, 1.5vw, 1.5rem)!important;
+        img {
+            width: 65px!important;
+            height: 65px!important;
+        }
+    }
+}

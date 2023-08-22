@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="shortcut icon" href="dist/assets/images/image-fococlipping-standard.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/assets/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="dist/assets/plugins/owl.theme.green.min.css">
+    <link rel="stylesheet" href="dist/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="dist/assets/plugins/slick.css">
+    <link rel="stylesheet" href="dist/assets/plugins/slick-theme.css">
+    <link rel="stylesheet" href="src/assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="src\assets\css\style.css">
+</head>
+<body onload="load()">
+    <!-- navbar mobile -->
+    <nav dir="rtl" class="navbar d-flex d-md-none justify-content-between align-items-center position-fixed px-2">
+        <div class="overlay"></div>
+        <div class="menu ">
+            <div class="hamberger position-relative">
+                <span class="hamber hamber-1"></span>
+                <span class="hamber hamber-2"></span>
+                <span class="hamber hamber-3"></span>
+            </div>
+            <ul class="wrapper-item text-right pr-4">
+              <div class="user-section d-flex justify-content-center">
+                <div class="user">
+                  <div class="user-info">
+                    <div class="parent-user-profile">
+                      <img src="src/assets/images/user.png" alt="">
+                    </div>
+                    <div class="parent-name-profile">
+                      <span class="profile-name">حسین صالح حسینی</span>
+                    </div>
+                  </div>
+                  <div class="show-account">
+                    <a href="src\profile.html"><button><i class="fa fa-user-circle" aria-hidden="true"></i>مشاهده حساب</button></a>
+                  </div>
+                  <div class="two-btns">
+                    <button><i class="fa fa-gear" aria-hidden="true"></i>الإعدادات</button>
+                    <button><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</button>
+                  </div>
+                </div>
+              </div> 
+              <div class="categoryes">
+                <div class="wrapper-items-nav section-desktop sevrices-wrapper align-items-center mt-2">
+                  <div class=" align-items-center text-right p-2 pr-2">
+                    <div class="d-flex align-items-center justify-content-between services">
+                      <div class="d-flex align-items-center ">
+                        <span class="material-symbols-outlined pl-2">settings_applications</span>
+                        <div class="foo-3 text-center all-group d-flex align-items-center w-100">خدمات
+                        
+                        </div>
+                      </div>
+                      <div class="chevron">
+                        <span class="material-symbols-outlined mt-1">
+                          arrow_back_ios
+                        </span>
+                      </div>
+                    </div>
+                      <ul class="mb-0">
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">more_vert</span><a href="dist/services.html">قائمة الخدمات</a></li>
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">local_mall</span><a href="dist/shop/shop.html">متجر</a></li>
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">local_library</span><a href="dist/school-page.html">المدرسة</a></li>
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">library_books</span><a href="dist/library/library.html">مكتبة</a></li>
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">military_tech</span><a href="#">مكتشف الشهيد</a></li>
+                        <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">slideshow</span><a href="dist/hashdtube/homepage.html">فيلم المنزل</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="wrapper-items-nav section-desktop mt-2">
+                  <div class="my-2"><li class="item item-2 d-flex align-items-center pb-2"><i class="fa-regular fa-heart px-2 mt-1 pb-1"></i><a href="dist/favorites.html">المفضل</a></li></div>
+                  <!-- <div class="my-2"><li class="item item-3 d-flex align-items-center pb-2"><span class="material-symbols-outlined px-2">bookmarks</span><a href="#">المحفوظ</a></li></div> -->
+                  <div class="my-2"><li class="item item-4 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">account_box</span><a href="dist/profile.html">معلومات شخصية</a></li></div>
+                  <div class="mt-2"><li class="item item-5 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">visibility</span><a href="dist/last-seens.html">اخر ظهور</a></li></div>
+                  <!-- <div class="my-2"><li class="item item-1 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">settings</span><a href="#">الإعدادات</a></li></div> -->
+                </div>
+              </div>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="dist/assets/images/image-fococlipping-standard.png" alt="logo"></a>
+        </div>
+        <div class="search-box d-flex align-items-center">
+          <button class="myBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+     
+        <div class="fullScreen">
+            <div class="inputBox">
+                <input type="text"
+                       placeholder="یبحث... ">
+                <button type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="closeBtn">
+              <i class="fa fa-close"></i>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+      <div class="row m-0 pr-md-3">
+      <main class="pr-0 pr-md-3 pl-0">
+        <!-- navbar desktop -->
+            <nav class="navbar-desktop p-2 mt-2 ml-2 d-none d-md-flex position-fixed justify-content-between align-items-center">
+              <div class="right-nav d-flex">
+                <div class="search-box d-flex align-items-center">
+                  <input dir="rtl" type="search" class="search-input" placeholder="يبحث ...">
+                  <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>
+              </div>
+              <div class="left-nav">
+                <img src="src\assets\images\logotop.svg" alt="">
+              </div>
+            </nav>
+        
+     <!-- slider header -->
+     <header dir="rtl">
+       <!-- mobile img -->
+        <div class="owl-carousel pr-2 pr-md-0 owl-theme d-md-none">
+            <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">ذكرى ختام عمليات تطهير</span><img class="img-fluid" src="dist/assets/images/new1-edited.png" alt=""></a></div>
+            <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">مثنى قاسم الكلابي</span><img class="img-fluid" src="dist/assets/images/new14-edited.png" alt=""></a></div>
+            <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">حديث اليوم تحف العقول</span><img class="img-fluid" src="dist/assets/images/new7-edited.png" alt=""></a></div>
+            <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">لإمام موسى الصدر (أعاده الله سالماً)</span><img class="img-fluid" src="dist/assets/images/new3-edited.png" alt=""></a></div>
+            <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">المدير العام للتوجيه</span><img class="img-fluid" src="dist/assets/images/new22-edited.png" alt=""></a></div>
+        </div>
+        <!-- desktop img -->
+        <!-- <div class="owl-carousel pr-2 pr-md-0 owl-theme d-none d-md-flex">
+          <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">ذكرى ختام عمليات تطهير</span><img class="img-fluid" src="dist/assets/images/new1-deskt-edited.png" alt=""></a></div>
+          <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">مثنى قاسم الكلابي</span><img class="img-fluid" src="dist/assets/images/new14-desk-edited.png" alt=""></a></div>
+          <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">حديث اليوم تحف العقول</span><img class="img-fluid" src="dist/assets/images/new7-desk-edited.png" alt=""></a></div>
+          <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">لإمام موسى الصدر (أعاده الله سالماً)</span><img class="img-fluid" src="dist/assets/images/new3-desk-edited.png" alt=""></a></div>
+          <div class="item position-relative"><a href="dist/first-group.html"><span class="over-lay-title">المدير العام للتوجيه</span><img class="img-fluid" src="dist/assets/images/new22-desk-edited.png" alt=""></a></div>
+      </div> -->
+      <section class="section1">
+        
+      </section>
+    </header>
+    
+    <!-- last seen content -->
+    <section dir="rtl" class="wrapper-content mt-2">
+        <div class="title d-flex justify-content-between align-items-center pl-2"><p class="m-0 custom-title-contents">آخر محتويات شوهدت</p><a href="#" class="mt-1"><i class="fa-solid fa-arrow-left"></i></a></div>
+        <div class="slider-content">
+          <div class="wrapper-content slick-slider">
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">الشهید حيدر الطليباوي</span><img class="img-fluid" src="dist/assets/images/new10-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">الشهيد العنبكي</span><img class="img-fluid" src="dist/assets/images/new15-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">مثنى قاسم الكلابي</span><img class="img-fluid" src="dist/assets/images/new14-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">بولادة نبي الرحمة</span><img class="img-fluid" src="dist/assets/images/new11-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">شهدت الاحتفالية</span><img class="img-fluid" src="dist/assets/images/new12-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">الشهيد ليث صباح</span><img class="img-fluid" src="dist/assets/images/new5-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">الشهيد محمود بشير</span><img class="img-fluid" src="dist/assets/images/new4-edited.png" alt=""></div>
+                <div class="item position-relative"><a href="dist/page-content-first-group.html" class="stretched-link"></a><span class="over-lay-title custom-over-lay-title">عمليات تطهير</span><img class="img-fluid" src="dist/assets/images/new1-edited.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- posts page -->
+    <section class="posts-wrapper mt-1 p-2" >
+      <p dir="rtl" class="m-0 custom-title-contents text-right">محتوى اللواء</p>
+        <div class="card border-0 mb-2" >
+            <div class="row no-gutters p-0">
+              <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10  left-card">
+                <div class="card-body p-0 px-2 pb-1 d-flex flex-column h-100 justify-content-around">
+                  <p class="card-title font-weight-bold p-0 m-0">عزاء في ذكرى الشهيد سردار حسن غازي</p>
+                  <p class="card-text p-0 m-1 text-justify text-right">
+                    بمناسبة الذكرى السنوية الأولى لاستشهاده، المديرية العامة للتوجيه العقائدي تقيم مجلس عزاء استذكارا وتخليدا وترحما على روح الشهيد القائد حسن غازي البديراوي من مديرية التدريب.
+
+                    وأقيم المجلس في معسكر الشهيد أبو منتظر المحمداوي بمحافظة ديالى، فيما يعد واحداً من النشاطات المباركة التي تقدمها المديرية في مقرات الحشد الشعبي إحياءً للمناسبات الدينية                  </p>
+                  <div class="text-right pl-2 mt-2 over-viwe d-flex justify-content-between justify-content-sm-end align-items-center">
+                    <div><span>241</span><i class="fa-regular fa-comment-dots px-1"></i></div>
+                    <div class="mx-sm-4"><span>795</span><i class="fa-regular fa-heart px-1"></i></div>
+                    <div><span>864</span><i class="fa-regular fa-eye px-1"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div dir="rtl" class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 right-card d-flex align-items-center p-2">
+                <img class="img-fluid h-100 w-100" src="dist/assets/images/new18-edited.png" alt="">
+              </div>
+            </div>
+            <a href="dist/page-content-first-group.html" class="stretched-link"></a>
+        </div>
+        <div class="card border-0 mb-2" >
+            <div class="row no-gutters p-0">
+              <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10 left-card">
+                <div class="card-body p-0 px-2 pb-1 d-flex flex-column h-100 justify-content-around">
+                  <p class="card-title font-weight-bold p-0 m-0">عيد المولد النبوي</p>
+                  <p class="card-text p-0 m-1 text-justify text-right">
+                    المدير العام للتوجيه العقائدي في الحشد الشعبي سماحة السيد محمد الحيدري يحضر حفلاً مباركاً أقامه اللواء العاشر في الحشد بذكرى ولادة نبي الرحمة محمد (صلى الله عليه وآله وسلم) في العاصمة بغداد.
+
+                    وألقى سماحة السيد الحيدري كلمة تناول فيها موضوعة الرسالة السماوية والشخصية القيادية الفذة التي تميز بها الرسول الأعظم محمد (صلى الله عليه وآله وسلم).
+                  </p>
+                  <div class="text-right pl-2 mt-2 over-viwe d-flex justify-content-between justify-content-sm-end align-items-center">
+                    <div><span>235</span><i class="fa-regular fa-comment-dots px-1"></i></div>
+                    <div class="mx-sm-4"><span>705</span><i class="fa-regular fa-heart px-1"></i></div>
+                    <div><span>662</span><i class="fa-regular fa-eye px-1"></i></div>
+                  </div>
+                </div>
+            <a href="dist/page-content-first-group.html" class="stretched-link"></a>
+              </div>
+              <div dir="rtl" class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 right-card d-flex align-items-center p-2">
+                <img class="img-fluid h-100 w-100" src="dist/assets/images/new19-edited.png" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="card border-0 mb-2" >
+            <div class="row no-gutters p-0">
+              <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10 left-card">
+                <div class="card-body p-0 px-2 pb-1 d-flex flex-column h-100 justify-content-around">
+                  <p class="card-title font-weight-bold p-0 m-0">مراسم بارفيز اللواء العاشر</p>
+                  <p class="card-text p-0 m-1 text-justify text-right">
+                    وألقى سماحة السيد الحيدري كلمة تناول فيها موضوعة الرسالة السماوية والشخصية القيادية الفذة التي تميز بها الرسول الأعظم محمد (صلى الله عليه وآله وسلم).
+
+                    وشهد الحفل حضور شخصيات دينية وقيادات في الحشد الشعبي وجمع من مجاهدي اللواء. ويتزامن هذا الحفل البهيج المبارك مع ذكرى مولد الإمام جعفر بن محمد الصادق (عليه السلام).                  </p>
+                  <div class="text-right pl-2 mt-2 over-viwe d-flex justify-content-around justify-content-sm-end align-items-center">
+                    <div><span>221</span><i class="fa-regular fa-comment-dots px-1"></i></div>
+                    <div class="mx-sm-4"><span>695</span><i class="fa-regular fa-heart px-1"></i></div>
+                    <div><span>850</span><i class="fa-regular fa-eye px-1"></i></div>
+                  </div>
+                </div>
+            <a href="dist/page-content-first-group.html" class="stretched-link"></a>
+              </div>
+              <div dir="rtl" class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 right-card d-flex align-items-center p-2">
+                <img class="img-fluid h-100 w-100" src="dist/assets/images/new20-edited.png" alt="">
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        <!-- loading -->
+        <div class="lds-spinner mb-5 d-flex justify-content-center align-items-center w-100 pr-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> 
+
+      </main>
+      <aside dir="rtl" class="aside d-none d-md-block section-desktop py-1 px-2 mt-2">
+        <div class="cont-elements mt-2">
+          <div class="user-section d-flex justify-content-center pt-2 pb-3">
+            <div class="user">
+              <div class="user-info">
+                <div class="parent-user-profile">
+                  <img src="src/assets/images/user.png" alt="">
+                </div>
+                <div class="parent-name-profile">
+                  <span class="profile-name">حسین صالح حسینی</span>
+                </div>
+              </div>
+              <div class="show-account">
+                <a href="src\profile.html"><button><i class="fa fa-user-circle" aria-hidden="true"></i>مشاهده حساب</button></a>
+              </div>
+              <div class="two-btns">
+                <button><i class="fa fa-gear" aria-hidden="true"></i>الإعدادات</button>
+                <button><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</button>
+              </div>
+            </div>
+          </div>
+          <div class="user-tools">
+            <div class="parent-btn-tools p-1">
+              <a><img src="src/assets/svg/Asset 6 1.svg" alt=""> كل الالوية</a>
+            </div>
+            <div class="parent-btn-tools itemactivated p-1">
+              <a><img src="src/assets/svg/Asset 5 1.svg" alt=""> لوائي <span>6</span></a>
+            </div>
+            <div class="parent-btn-tools p-1">
+              <a><img src="src/assets/svg/Frame.svg" alt=""> عرض المحتوى</a>
+            </div>
+          </div>
+          <div class="categoryes">
+            <div class="wrapper-items-nav mt-5 section-desktop sevrices-wrapper align-items-center mt-2">
+              <div class=" align-items-center text-right p-2 pr-2">
+                <div class="d-flex align-items-center justify-content-between services">
+                  <div class="d-flex align-items-center ">
+                    <span class="material-symbols-outlined pl-2">settings_applications</span>
+                    <div class="foo-3 text-center all-group d-flex align-items-center w-100">خدمات
+                    
+                    </div>
+                  </div>
+                  <div class="chevron">
+                    <span class="material-symbols-outlined mt-1">
+                      arrow_back_ios
+                    </span>
+                  </div>
+                </div>
+                  <ul class="mb-0">
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">more_vert</span><a href="dist/services.html">قائمة الخدمات  <span class="coming-soon">به زودی</span></a></li>
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">local_mall</span><a href="dist/shop/shop.html">متجر  <span class="coming-soon">به زودی</span></a></li>
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">local_library</span><a href="dist/school-page.html">المدرسة  <span class="coming-soon">به زودی</span></a></li>
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">library_books</span><a href="dist/library/library.html">مكتبة  <span class="coming-soon">به زودی</span></a></li>
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">military_tech</span><a href="#">مكتشف الشهيد  <span class="coming-soon">به زودی</span></a></li>
+                    <li class="d-flex align-items-center my-3"><span class="material-symbols-outlined px-2">slideshow</span><a href="dist/hashdtube/homepage.html">فيلم المنزل  <span class="coming-soon">به زودی</span></a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="wrapper-items-nav section-desktop mt-2">
+              <div class="my-2"><li class="item item-2 d-flex align-items-center pb-2"><i class="fa-regular fa-heart px-2 mt-1 pb-1"></i><a href="dist/favorites.html">المفضل</a></li></div>
+              <!-- <div class="my-2"><li class="item item-3 d-flex align-items-center pb-2"><span class="material-symbols-outlined px-2">bookmarks</span><a href="#">المحفوظ</a></li></div> -->
+              <div class="my-2"><li class="item item-4 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">account_box</span><a href="dist/profile.html">معلومات شخصية</a></li></div>
+              <div class="mt-2"><li class="item item-5 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">visibility</span><a href="dist/last-seens.html">اخر ظهور</a></li></div>
+              <!-- <div class="my-2"><li class="item item-1 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">settings</span><a href="#">الإعدادات</a></li></div> -->
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+    </div>
+
+<!-- fexed footer -->
+<footer class="fix-footer pb-1 d-md-none position-fixed">
+  <div class="cont-buttons-tools">
+    <a class="btn-footer-mobile d-flex p-1 order-4" href="#">
+      <div class="parent-icon-btn">
+        <i class="fa fa-home footer-item-active" aria-hidden="true"></i>
+      </div>
+      <div class="btn-name">
+        <span>خانه</span>
+      </div>
+    </a>
+    <a class="btn-footer-mobile d-flex p-1 order-3" href="#">
+      <div class="parent-icon-btn">
+        <img src="src/assets/svg/Frame 435.svg" alt="">
+      </div>
+      <div class="btn-name">
+        <span>لوائي</span>
+      </div>
+    </a>
+    <a class="btn-footer-mobile d-flex p-1 order-2" href="#">
+      <div class="parent-icon-btn">
+        <img src="src/assets/svg/fluent-mdl2_c-r-m-services.svg" alt="">
+      </div>
+      <div class="btn-name">
+        <span>خدمات</span>
+      </div>
+    </a>
+    <a class="btn-footer-mobile d-flex p-1 order-1" href="#">
+      <div class="parent-icon-btn">
+        <img src="src/assets/svg/Frame 460.svg" alt="">
+      </div>
+      <div class="btn-name">
+        <span>پروفایل</span>
+      </div>
+    </a>
+  </div>
+  
+</footer>
+
+
+
+
+
+    <script src="src/assets/js/cdn.jsdelivr.net_npm_sweetalert2@11.js"></script>
+    <script src="src/assets/js/code.jquery.com_jquery-3.6.1.js"></script>
+    <script src="dist/assets/bootstrap/bootstrap.min.js"></script>
+    <script src="dist/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="dist/assets/plugins/owl.carousel.min.js"></script>
+    <script src="dist/assets/plugins/slick.min.js"></script>
+    <script src="src/assets/js/main.js"></script>
+    <script>
+ 
+      $(document).ready(function () {
+    
+          ConvertNumberToPersion();
+      });
+    
+      function ConvertNumberToPersion() {
+          persian = { 0: '۰', 1: '۱', 2: '۲', 3: '۳', 4: '۴', 5: '۵', 6: '۶', 7: '۷', 8: '۸', 9: '۹' };
+          function traverse(el) {
+              if (el.nodeType == 3) {
+                  var list = el.data.match(/[0-9]/g);
+                  if (list != null && list.length != 0) {
+                      for (var i = 0; i < list.length; i++)
+                          el.data = el.data.replace(list[i], persian[list[i]]);
+                  }
+              }
+              for (var i = 0; i < el.childNodes.length; i++) {
+                  traverse(el.childNodes[i]);
+              }
+          }
+          traverse(document.body);
+      }
+    
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                rtl: true,
+                nav:true,
+                center:false,
+                autoplay:false,
+                autoplayTimeout:6000,
+                autoplayHoverPause:false,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1.3,
+                    },
+                    600:{
+                        items:1.4,
+                    },
+                    1000:{
+                        items:1.4,
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $('.slick-slider').slick({
+            rtl: true,
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1700,
+      settings: {
+        rtl: true,
+        slidesToShow: 4.5,
+        slidesToScroll: 2,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2.3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+</body>
+</html>

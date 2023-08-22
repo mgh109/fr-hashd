@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="assets/images/image-fococlipping-standard.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="d-flex p-2 justify-content-center align-items-center vh-100">
+    
+  <div class="container-form text-right rounded-lg p-md-4">
+    <img src="assets/images/image-fococlipping-standard.png" alt="logo" class="img-fluid m-auto">
+    <h5 class="text-center mt-3 d-md-none">تسجيل الدخول إلى لوحة المستخدم</h5>
+    <h5 class="d-none mt-3 mb-0 d-md-block">مرحبا بكم في الموقع</h5>
+    <p class="d-none mb-1 d-md-block">إدراج رقم هاتفك المحمول وكلمة المرور لتسجيل الدخول</p>
+    <form class="form">
+        <div dir="rtl" class="form-row align-items-center">
+          <div class="col-12 mb-1">
+            <label class=" mr-1" for="inlineFormInputGroup">سم المستخدم</label>
+            <div class="input-group position-relative">
+              <div class="icons user-icon position-absolute p-2 d-md-none"><i class="fa-regular fa-circle-user pl-2"></i></div>
+              <input type="text" name="username" class="form-control pr-5 pr-md-1 rounded" id="inlineFormInputGroup" placeholder="إدراج اسم المستخدم الخاص بك" required>
+            </div>
+          </div>
+          <div class="col-12 mt-md-2">
+            <div class="d-flex justify-content-between "><label class="mr-1" for="inlineFormInputGroup">كلمه السر</label><a href="#" class="px-1 d-none d-md-inline-block ">فراموش کرده اید؟</a></div>
+            <div class="input-group position-relative mb-1 mb-md-0">
+                <div class="icons lock-icon position-absolute p-2 d-md-none"><span class="material-symbols-outlined pl-2">lock</span></div>
+              <input type="text" name="password" class="form-control pr-5 pr-md-1 rounded" id="inlineFormInputGroup" placeholder="إدراج كلمة مرور حسابك" required>
+            </div>
+            <span class="forget-pass d-md-none">هل نسيت كلمة المرور الخاصة بحسابك؟<a href="#" class="px-1 d-inline-block">استعادة كلمة السر</a></span>
+            <div class="wrapper-remember d-none d-md-flex align-items-center">
+              <input class="ml-2" type="checkbox" name="remember" id="remember">
+              <label>تذكرنى</label>
+            </div>
+          </div>
+          <div class="col-12 mt-2 mt-md-1">
+            <button type="submit" class="btn btn-success mb-2 w-100"><a href="../index.html">تسجيل الدخول إلى الحساب</a></button>
+          </div>
+        </div>
+      </form>
+</div>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

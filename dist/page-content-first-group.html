@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page content group</title>
+    <link rel="shortcut icon" href="assets/images/image-fococlipping-standard.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body onload="load()">
+
+    <!-- navbar -->
+  <nav dir="rtl" class="navbar d-flex d-md-none justify-content-between align-items-center position-fixed px-2">
+    <div class="overlay"></div>
+    <div class="menu ">
+        <div class="hamberger position-relative">
+            <span class="hamber hamber-1"></span>
+            <span class="hamber hamber-2"></span>
+            <span class="hamber hamber-3"></span>
+        </div>
+        <ul class="wrapper-item position-fixed text-right pr-4">
+          <div class="user position-absolute text-center w-100 d-flex align-items-center"><img class="img-fluid rounded-lg" src="assets/images/logo-edited.png" alt="user"><span class="mx-3 p-0 mb-0">محمد عرفان گائینی<p class="m-0"><a href="#">09123456789</a></p></span></div>
+          <div class="d-flex flex-column justify-content-between pb-5 align-content-between h-100">
+            <div>
+              <li class="item item-1 pb-1 d-flex align-items-center mb-0">
+                <div class=" sevrices-wrapper align-items-center w-100 pl-5">
+                <div class=" align-items-center text-right p-2 pr-2">
+                  <div class="d-flex align-items-center justify-content-between services">
+                    <div class="d-flex align-items-center ">
+                      <span class="material-symbols-outlined pl-2">settings_applications</span>
+                      <div class="foo-3 text-center all-group d-flex  align-items-center w-100">خدمات</div>
+                    </div>
+                    <div class="chevron">
+                      <span class="material-symbols-outlined">
+                        arrow_back_ios
+                      </span>
+                    </div>
+                  </div>
+                    <ul>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">more_vert</span><a href="services.html">قائمة الخدمات</a></li>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">local_mall</span><a href="shop/shop.html">متجر</a></li>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">local_library</span><a href="school-page.html">المدرسة</a></li>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">library_books</span><a href="library/library.html">مكتبة</a></li>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">military_tech</span><a href="#">مكتشف الشهيد</a></li>
+                      <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">slideshow</span><a href="./hashdtube/homepage.html">فيلم المنزل</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </li>
+                <li class="item item-2 d-flex align-items-center mt-1 pb-2"><i class="fa-regular fa-heart px-2 mt-1"></i><a href="./favorites.html">المفضل</a></li>
+                <!-- <li class="item item-3 d-flex align-items-center mt-1 pb-2"><span class="material-symbols-outlined px-2">bookmarks</span><a href="#">المحفوظ</a></li> -->
+                <li class="item item-4 pb-2 d-flex align-items-center mt-1"><span class="material-symbols-outlined px-2">account_box</span><a href="./profile.html">معلومات شخصية</a></li>
+                <li class="item item-5 pb-2 d-flex align-items-center mt-1"><span class="material-symbols-outlined px-2">visibility</span><a href="./last-seens.html">اخر ظهور</a></li>
+            </div>
+            <div>
+                <!-- <li class="item item-1 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">settings</span><a href="#">الإعدادات</a></li> -->
+                <li class="item item-2 d-flex align-items-center pb-2 exit"><i class="fa-solid fa-arrow-right-from-bracket px-2"></i><a href="#">خروج</a></li>
+            </div>
+          </div>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="../index.html"><img src="assets/images/image-fococlipping-standard.png" alt="logo"></a>
+    </div>
+    <div class="search-box d-flex align-items-center">
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="search" class="search-input" placeholder="یبحث ...">
+    </div>
+  </nav>
+
+
+<div class="row m-0 pr-md-3">
+    <main class="col-md-9 col-lg-10 pr-0 pr-md-3 pl-0">
+        <!-- navbar desktop -->
+        <nav class="navbar-desktop p-2 mt-2 ml-2 d-none d-md-flex position-fixed justify-content-between align-items-center">
+            <div class="right-nav d-flex">
+              <div class="user text-center d-flex align-items-center">
+                <img class="img-fluid rounded-lg" src="assets/images/logo-edited.png" alt="user">
+                <span class="mx-2 p-0 mb-0">محمد عرفان گائینی
+                  <p class="m-0">
+                    <a href="#">09123456789</a>
+                  </p>
+                </span>
+              </div>
+              <div class="search-box ml-3 d-flex align-items-center">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input dir="rtl" type="search" class="search-input" placeholder="یبحث ...">
+              </div>
+            </div>
+            <div class="left-nav">
+              <i class="fa-solid fa-arrow-right-from-bracket px-2 pt-1"></i>
+            </div>
+          </nav>
+
+        <section class="wrapper-content-first-gruop p-2">
+            <div class="img position-relative">
+                <img class="img-fluid rounded-lg h-100" src="assets/images/new21-edited.png" alt="soleymani">
+                <div class="overlay-content-group position-absolute">
+                    <div class="overlay-text-content d-flex flex-column align-items-end justify-content-end w-100 h-100 text-right">
+                        <p class="title-overlay mb-1 pr-2 my-2">تعليق على صورة حضرة السيد محمد الحيدري</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-100 position-relative">
+                <div class="heart-stick position-absolute w-100 text-center">
+                    <span class="d-inline-block wrapper-heart"><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </div>
+            <p class="mt-5 first-para mb-4 text-right p-1">
+              المدير العام للتوجيه العقائدي في الحشد الشعبي سماحة السيد محمد الحيدري يحضر حفلاً مباركاً أقامه اللواء العاشر في الحشد بذكرى ولادة نبي الرحمة محمد (صلى الله عليه وآله وسلم) في العاصمة بغداد.
+
+              وألقى سماحة السيد الحيدري كلمة تناول فيها موضوعة الرسالة السماوية والشخصية القيادية الفذة التي تميز بها الرسول الأعظم محمد (صلى الله عليه وآله وسلم).              
+            </p>
+            <p class="second-para mb-4 text-right p-1">
+              وألقى سماحة السيد الحيدري كلمة تناول فيها موضوعة الرسالة السماوية والشخصية القيادية الفذة التي تميز بها الرسول الأعظم محمد (صلى الله عليه وآله وسلم).
+
+              وشهد الحفل حضور شخصيات دينية وقيادات في الحشد الشعبي وجمع من مجاهدي اللواء. ويتزامن هذا الحفل البهيج المبارك مع ذكرى مولد الإمام جعفر بن محمد الصادق (عليه السلام).            </p>
+            <p class="second-para mb-4 text-right p-1">
+              المدير العام للتوجيه العقائدي في الحشد الشعبي سماحة السيد محمد الحيدري يحضر حفلاً مباركاً أقامه اللواء العاشر في الحشد بذكرى ولادة نبي الرحمة محمد (صلى الله عليه وآله وسلم) في العاصمة بغداد.
+
+              وألقى سماحة السيد الحيدري كلمة تناول فيها موضوعة الرسالة السماوية والشخصية القيادية الفذة التي تميز بها الرسول الأعظم محمد (صلى الله عليه وآله وسلم).
+              
+              وشهد الحفل حضور شخصيات دينية وقيادات في الحشد الشعبي وجمع من مجاهدي اللواء. ويتزامن هذا الحفل البهيج المبارك مع ذكرى مولد الإمام جعفر بن محمد الصادق (عليه السلام). 
+           </p>
+            <div class="wrapper-video col-md-8 offset-md-2">
+                <video
+                id="my-video"
+                class="video-js responsive-video "
+                controls
+                preload="auto"
+                poster="assets/images/new19-edited.png"
+                data-setup="{}"
+              >
+                <source src="assets/videos/istockphoto-1326011209-640_adpp_is.mp4" type="video/mp4" />
+                <source src="MY_VIDEO.webm" type="video/webm" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+            </div>
+            <p class="second-para mt-4 mb-4 text-right p-1">
+              نهنئكم والمسلمين والإمام الحجة (عج) بمناسبة ذكرى ولادة النبي الأكرم محمد (ص)، لقد اختار الله سبحانه وتعالى النبي محمداً (ص) من بين كل البشر ليكون أميناً وهادياً، أميناً على رسالة الله تعالى للمسلمين كافة، فأصبح هو الصادق الأمين، وهذا الأمر جعل للنبي (ص) مقاماً محموداً كبيراً لا يضاهى.  
+
+              اتصف نبينا الكريم (ص) بالرحمة، إذ قال تعالى {وما أرسلناك إلا رحمة للعالمين}، أي أن النبي محمداً (ص) جاء بالمحبة والأخوة والتعاون بين الجميع من أجل أن يعيشوا حياة مرفهة، ورحمةً للفقراء واليتامى والمساكين، بل إن العقاب بحق المعتدي والمسيء هو رحمة للمجتمع. 
+              
+              تشريعات النبي (ص) وتعليماته وسيرته كلها رحمة للناس، ليس للمؤمنين فقط، بل للناس كافة، وهذه الرحمة تجسيد لإرادة الله سبحانه تعالى حينما أرسل لنا النبي (ص) من أجل حياة طيبة وتحقيق العدل، ولذلك جزء من هذه الرحمة إقامة العدل والمحبة والأخوة وغيرها.
+             </p>
+            <div class="col-md-8 offset-md-2 custom-border-img"><img src="assets/images/new20-edited.png" alt="soleymani" class=""></div>
+            <p class="second-para mt-3 mb-4 text-right p-1">
+              إن صفة الرحمة التي امتاز بها النبي (ص) تتطابق بالضرورة مع التشريعات التي جاء بها، ولهذا يذكر علماؤنا أن النبي (ص) لم يقم بغزوات ابتدائية وكانت كل غزواته وحروبه دفاعية كصد هجوم أو رد على نكث اتفاقيات وغيرها، وهذه تندرج أيضاً ضمن الرحمة الإلهية، وكذلك نجد أن النبي (ص) لم يقتل أحداً من أصحابه.
+
+              أرسل نبينا الكريم النبي (ص) إلى البشرية جمعاء، لا فرق بين أبيض وأسود في هذه المدينة ولا في تلك الدولة، وقد احترم النبي (ص) المؤمنين وغير المؤمنين، بل حتى المنافقين ولم يقاتلهم على الرغم من علمه بنيتهم حينما أقاموا مسجد ضرار، وهذا يدل على أن النبي (ص) جاء بالوحدة بين المسلمين، وبالوحدة بين البشرية واهتم بهذا الجانب، جانب الوحدة. 
+              
+              بعد أن هاجر النبي (ص) إلى المدينة المنورة أول عمل قام به بعد بناء السجد هو المؤاخاة بين المسلمين، فعلى الرغم من الخلافات والصراعات بين عشيرتي الأوس والخزرج وسنين طويلة من القتل والدماء فقد جمعهم النبي (ص) ووحدهم، وكذلك شجّع على عقد اتفاق مع اليهود لإقامه العدل ونصرة الفقير والمظلوم، ولو أن الاتفاقية استمرت لاستمر الوضع الحسن إلا أن اليهود نقضوا الاتفاق واتفقوا مع قريش لمحاربة النبي (ص).
+             </p>
+            <p class="second-para mb-4 text-right p-1">
+              النبي (ص) جاء من أجل الوحدة بين الناس، المسلمين وغير المسلمين، وكانت هنلك قبائل قريبة من المدينة المنورة تشن غارات من أجل السلب لتعتاش، وقد نهى النبي (ص) هذه القبائل عن ذلك وحذّرها بأن يرسل لها جيشاً لمحاربتها، فهو بشكل عام حاول أن يوحد بين المسلمين، وبين المسلمين وغيرهم. 
+
+             بالنسبة لمسألة الاختلاف في يوم ولادة النبي (ص) بين السنة الذين يرون أن الولادة في 12 من ربيع الأول، والشيعة الذين يرونها في 17 من ربيع الأول، فإن قسماً من علمائنا يقولون إنها في 12 أيضاً، لذلك حاولوا أن يجعلوا من هذه الولادة المباركة أسبوعاً للوحدة.
+              
+              من الطبيعي وجود مشتركات كثيرة بين الشيعة والسنة، نعم هنلك اختلافات لكن يجب أن تُترك جانباً ويكون التركيز على المشتركات، لذلك كانت ثمة دعوات من علمائنا وبالأخص من الإمام الخميني (قده) ابتداء طرح فكرة "أسبوع الوحدة الإسلامية" وهم يعلمون -أي العلماء- أن الأعداء يتربصون لأجل الإيقاع بين السنة والشيعة أو التشكيك بالإسلام وبمبادئ الإسلام وبالنبوة وبالله تعالى.
+            </p>
+                <section class="d-md-flex align-items-center">
+                    <div dir="rtl" class="hashtags col-md-6 d-flex pt-1 flex-wrap position-relative">
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_أولاً<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ ثانيا<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ ثالث<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ الرابعة<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ الخامس<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ السادس<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ السابع<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ ثامن<a href="hashtags-page.html" class="stretched-link"></a></div>
+                        <div class="badge mb-1 px-1 position-relative"># هشتگ_ تاسع<a href="hashtags-page.html" class="stretched-link"></a></div>
+                    </div>
+                    <div class="wrapper-over-view d-flex col-md-6 order-md-first justify-content-between align-items-center rounded-lg p-1 mt-2">
+                        <div class="mt-1"><i class="fa-regular fa-comment-dots px-1"></i><span>241</span></div>
+                        <div class="mt-1"><i class="fa-regular fa-heart px-1"></i><span>795</span></div>
+                        <div class="mt-1"><i class="fa-regular fa-eye px-1"></i><span>864</span></div>
+                    </div>
+                </section>
+            <div class="comments">
+                <form action="" method="" class="text-right w-100">
+                    <label dir="rtl" id="comment" class="custom-title-contents mt-2 mb-0 ">تعليق</label>
+                    <textarea class="comment-area p-1 d-block w-100" dir="rtl" name="comment" id="" cols="35" rows="4" placeholder="إبداء رأيك في هذا المقال ..."></textarea>
+                    <div class="btn-form d-flex flex-column flex-md-row justify-content-between align-items-center"><button class="confirm-btn text-center p-2 mt-2 " type="button">تسجيل التعليقات وإرسال التعليقات</button><div>تسجيل تعليق يعني الموافقة مع <span>قواعد نشر الموقع</span> هو </div></div>
+                </form>
+            </div>
+            <div class="comments-registered mt-3 text-right position-relative">
+                <span class="position-absolute line"></span>
+                <p dir="rtl" class="text-right custom-title-contents m-0 font-weight-bolder">التعليقات مسجلة</p>
+                <div class="wrapper-comment-user " style="margin-bottom: 0!important;">
+                    <p class="user-name m-0 p-1">محمد محمدی</p>
+                    <p class="comment m-0 my-2 pr-2">المقال كان شاملا وكاملا جدا شكرا لك على النشر</p>
+                    <div class="other-comment p-1">
+                        <div class="col-lg-4 m-lg-2 p-1 d-flex justify-content-between align-items-center">
+                            <div class="answer-comment w-50 text-left pl-2 d-flex justify-content-around align-items-center">الرد على هذا التعليق<i class="fa-regular fa-comments px-2"></i></div>
+                            <div class="likes d-flex text-right w-50 justify-content-center align-items-center"><div class="mx-3 dislike"><i class="fa-regular fa-thumbs-down px-2"></i><span>0</span></div><div class="like"><i class="fa-regular fa-thumbs-up px-2"></i><span>14</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+    </main>
+
+    <aside dir="rtl" class="aside d-none d-md-block position-fixed section-desktop py-1 px-2 mt-2 col-md-3 col-lg-2">
+        <div class="logo d-flex justify-content-center"><a href="../index.html"><img src="assets/images/image-fococlipping-standard.png" alt=""></a></div> 
+        <div class="fix-footer section-desktop p-1 d-flex flex-column align-items-center bg-white justify-content-center">
+          <a href="all-groups.html" class="d-flex align-items-center text-right p-2"><span class="material-symbols-outlined pl-2">grid_view</span><div class="foo-3 text-center all-group d-flex align-items-center">كل الالوية</div></a>
+          <a href="../index.html" class="d-flex align-items-center text-right my-1 p-2 position-relative"><div class="badge badge-danger custom-badge">6</div><span class="material-symbols-outlined pl-2">person</span><div class="foo-2 text-center my-group d-flex align-items-center ">لوائي</div></a>
+          <a href="show-contents.html" class="d-flex align-items-center text-right p-2 pr-2"><div class="footer-icons"><span class="material-symbols-outlined pl-2">dashboard</span></div><div class="foo-1 text-center show-content d-flex align-items-center">عرض المحتوى</div></a>
+        </div>
+        <div class="wrapper-items-nav section-desktop sevrices-wrapper align-items-center mt-2">
+          <div class=" align-items-center text-right p-2 pr-2">
+            <div class="d-flex align-items-center justify-content-between services">
+              <div class="d-flex align-items-center ">
+                <span class="material-symbols-outlined pl-2">settings_applications</span>
+                <div class="foo-3 text-center all-group d-flex align-items-center w-100">خدمات
+                  
+                </div>
+              </div>
+              <div class="chevron">
+                <span class="material-symbols-outlined mt-1">
+                  arrow_back_ios
+                </span>
+              </div>
+            </div>
+              <ul class="mb-0">
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">more_vert</span><a href="services.html">قائمة الخدمات</a></li>
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">local_mall</span><a href="shop/shop.html">متجر</a></li>
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">local_library</span><a href="school-page.html">المدرسة</a></li>
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">library_books</span><a href="library/library.html">مكتبة</a></li>
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">military_tech</span><a href="#">مكتشف الشهيد</a></li>
+                <li class="d-flex align-items-center my-2"><span class="material-symbols-outlined px-2">slideshow</span><a href="./hashdtube/homepage.html">فيلم المنزل</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="wrapper-items-nav section-desktop mt-2">
+          <div class="my-2"><li class="item item-2 d-flex align-items-center pb-2"><i class="fa-regular fa-heart px-2 mt-1 pb-1"></i><a href="./favorites.html">المفضل</a></li></div>
+          <!-- <div class="my-2"><li class="item item-3 d-flex align-items-center pb-2"><span class="material-symbols-outlined px-2">bookmarks</span><a href="#">المحفوظ</a></li></div> -->
+          <div class="my-2"><li class="item item-4 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">account_box</span><a href="./profile.html">معلومات شخصية</a></li></div>
+          <div class="mt-2"><li class="item item-5 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">visibility</span><a href="./last-seens.html">اخر ظهور</a></li></div>
+          <!-- <div class="my-2"><li class="item item-1 pb-2 d-flex align-items-center"><span class="material-symbols-outlined px-2">settings</span><a href="#">الإعدادات</a></li></div> -->
+        </div>
+      </aside>
+</div>
+
+<footer dir="rtl" class="w-100 second-main-crl text-left px-3"><small>جميع حقوق هذه المنصة مملوكة لـ ...</small></footer>
+
+
+  <!-- loading (Do not use for now)--> 
+  <!-- <div class="lds-spinner mb-5 d-flex justify-content-center align-items-center w-100 pr-5">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>  -->
+
+
+<!-- fexed footer -->
+<footer class="fix-footer pb-1 position-fixed d-flex d-md-none align-items-center bg-white justify-content-center">
+<a href="show-contents.html" class="d-flex flex-column text-center "><div class="footer-icons mt-2 mb-2"><span class="material-symbols-outlined ">dashboard</span></div><div class="foo-1 text-center show-content d-flex justify-content-center align-items-center w-100">عرض المحتوى</div></a>
+<a href="../index.html" class="d-flex flex-column text-center position-relative mt-2"><div class="badge badge-danger custom-badge-mobile">6</div><span class="material-symbols-outlined ">person</span><div class="foo-2 text-center my-group d-flex justify-content-center align-items-center mb-2 w-100">لوائي</div></a>
+<a href="all-groups.html" class="d-flex flex-column text-center"><span class="material-symbols-outlined mt-2">grid_view</span><div class="foo-3 text-center all-group d-flex justify-content-center align-items-center w-100">كل الالوية</div></a>
+<a href="services.html" class="d-flex flex-column text-center"><span class="material-symbols-outlined">settings_applications</span><div class="foo-3 text-center all-group d-flex justify-content-center align-items-center w-100">خدمات</div></a>
+
+</footer>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script
+src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+crossorigin="anonymous"></script>
+<script src="assets/bootstrap/bootstrap.min.js"></script>
+<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+<script>
+ 
+  $(document).ready(function () {
+
+      ConvertNumberToPersion();
+  });
+
+  function ConvertNumberToPersion() {
+      persian = { 0: '۰', 1: '۱', 2: '۲', 3: '۳', 4: '۴', 5: '۵', 6: '۶', 7: '۷', 8: '۸', 9: '۹' };
+      function traverse(el) {
+          if (el.nodeType == 3) {
+              var list = el.data.match(/[0-9]/g);
+              if (list != null && list.length != 0) {
+                  for (var i = 0; i < list.length; i++)
+                      el.data = el.data.replace(list[i], persian[list[i]]);
+              }
+          }
+          for (var i = 0; i < el.childNodes.length; i++) {
+              traverse(el.childNodes[i]);
+          }
+      }
+      traverse(document.body);
+  }
+
+</script>
+</body>
+</html>

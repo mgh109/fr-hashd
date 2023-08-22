@@ -1,0 +1,16 @@
+section.container-cart {
+    .cart {
+        background-color: $green-crl;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .add-cart-custom {
+        position: absolute!important;
+        bottom: 44.6vw!important;
+        left: 15%!important;
+    }
+}

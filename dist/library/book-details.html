@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="../../dist/assets/images/image-fococlipping-standard.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/plugins/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/plugins/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/plugins/owl.theme.green.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../../dist/assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../dist/assets/css/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="../../dist/assets/plugins/slick.css" />
+    <link rel="stylesheet" href="../../dist/assets/plugins/slick-theme.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/assets/css/style.min.css" />
+  </head>
+  <body dir="rtl">
+    <!-- NAVBAR -->
+    <nav class="nav__lib d-md-none">
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img src="../assets/images/image-fococlipping-standard.png" alt=""
+          /></a>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <!-- <span class="logo-name"><img src="../assets/images/image-fococlipping-standard.png" alt=""></a></span> -->
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li class="elem">
+              <a class="title__submenu" href="#">آیتم اول منو</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="./book-lists.html">زیر منو اول</a></li>
+                <li><a href="./book-second-list.html">زیر من دوم</a></li>
+                <li><a href="./book-third-list.html">زیر منو سوم</a></li>
+              </ul>
+            </li>
+            <li class="elem">
+              <a class="title__submenu2" href="#">آیتم دوم منو</a>
+              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="./book-lists.html">زیر منو اول</a></li>
+                <li><a href="./book-fourth-list.html">زیر من دوم</a></li>
+                <li><a href="./book-fifth-list.html">زیر منو سوم</a></li>
+              </ul>
+            </li>
+            <li class="elem">
+              <a class="title__submenu3" href="#">آیتم سوم منو</a>
+              <i class="bx bxs-chevron-down js-arrow2 arrow"></i>
+              <ul class="js-sub-menu2 sub-menu">
+                <li><a href="./book-lists.html">زیر منو اول</a></li>
+                <li><a href="./book-fourth-list.html">زیر من دوم</a></li>
+                <li><a href="./book-fifth-list.html">زیر منو سوم</a></li>
+              </ul>
+            </li>
+            <li class="elem">
+              <a class="title__submenu4" href="#">آیتم چهارم منو</a>
+              <i class="bx bxs-chevron-down js-arrow3 arrow"></i>
+              <ul class="js-sub-menu3 sub-menu">
+                <li><a href="./book-lists.html">زیر منو اول</a></li>
+                <li><a href="./book-fourth-list.html">زیر من دوم</a></li>
+                <li><a href="./book-fifth-list.html">زیر منو سوم</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="bx bx-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="جستجو..." />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav__lib d-none d-md-block">
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img src="../assets/images/image-fococlipping-standard.png" alt=""
+          /></a>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <!-- <span class="logo-name"><img src="../assets/images/image-fococlipping-standard.png" alt=""></a></span> -->
+            <i class="bx bx-x"></i>
+          </div>
+
+          <div class="nav__lib__mobile d-none d-md-block">
+            <ul>
+              <li class="drop4">
+                <a href="#" class="m-0 mx-2 p-0">آیتم اول چهارم</a>
+                <ul class="dropdown dropdown4">
+                  <li><a href="./book-lists.html">زیر منو اول</a></li>
+                  <li><a href="./book-second-list.html">زیر من دوم</a></li>
+                  <li><a href="./book-third-list.html">زیر منو سوم</a></li>
+                </ul>
+              </li>
+              <li class="drop3">
+                <a href="#" class="m-0 mx-2 p-0">آیتم اول سوم</a>
+                <ul class="dropdown dropdown3">
+                  <li><a href="./book-lists.html">زیر منو اول</a></li>
+                  <li><a href="./book-second-list.html">زیر من دوم</a></li>
+                  <li><a href="./book-third-list.html">زیر منو سوم</a></li>
+                </ul>
+              </li>
+              <li class="drop2">
+                <a href="#" class="m-0 mx-2 p-0">آیتم اول دوم</a>
+                <ul class="dropdown dropdown2">
+                  <li><a href="./book-lists.html">زیر منو اول</a></li>
+                  <li><a href="./book-second-list.html">زیر من دوم</a></li>
+                  <li><a href="./book-third-list.html">زیر منو سوم</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#" class="m-0 mx-2 p-0">آیتم اول منو</a>
+                <ul class="dropdown dropdown1">
+                  <li><a href="./book-lists.html">زیر منو اول</a></li>
+                  <li><a href="./book-second-list.html">زیر من دوم</a></li>
+                  <li><a href="./book-third-list.html">زیر منو سوم</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search__box">
+          <input type="text" placeholder=" " /><span></span>
+      </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 pt-5" style="max-width: 1300px">
+      <div class="row">
+        <div class="book col-md-7 d-flex flex-column flex-sm-row">
+          <div class="book__img col-xl-4 col-lg-5">
+            <img
+              class="rounded-lg img-fluid h-100"
+              src="../assets/images/134923.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="book__options col-xl-8 col-lg-7 d-flex flex-column justify-content-between text-right mt-4 mt-sm-0"
+          >
+            <div>
+              <h2 class="text-center text-sm-right">کتاب ایستاده در آتش</h2>
+              <ul>
+                <li class="mb-2" style="list-style-type: disc !important">
+                  <strong>الكاتب</strong> : مهدی غلامی
+                </li>
+                <li class="mb-2" style="list-style-type: disc !important">
+                  <strong>المترجم</strong> : مهدی غلامی
+                </li>
+                <li class="mb-2" style="list-style-type: disc !important">
+                  <strong>الناشر</strong> : حشد
+                </li>
+                <li class="mb-2" style="list-style-type: disc !important">
+                  <strong>عدد الصفحات</strong> : 113
+                </li>
+                <li class="pl-5 mb-3" style="list-style-type: disc !important">
+                  <strong>النوع</strong> : دفاع مقدس > داستان کودک و نوجوان
+                  > مجموعه تستی اول
+                </li>
+              </ul>
+            </div>
+            <div class="book__save d-none d-sm-block">
+              <button class="btn btn-outline-info rounded-pill px-4">
+                <i class="fa-regular fa-bookmark ml-2"></i>
+                حفظ هذا الكتاب في الحساب
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overview col-md-5 mt-4 mt-md-0">
+          <div class="wrapper shadow-lg rounded-lg">
+            <h2 class="title text-center p-2 border-bottom">ملخص الكتاب</h2>
+            <div class="book__summary text-right p-2 px-3">
+              <span><strong>ملخص : </strong></span>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                برای ...
+              </p>
+            </div>
+            <div class="book__save d-sm-none w-100 px-3">
+              <button class="btn btn-outline-info rounded-pill w-100 py-2 px-4">
+                <i class="fa-regular fa-bookmark ml-2"></i>
+                حفظ هذا الكتاب في الحساب
+              </button>
+            </div>
+            <div class="book__reading mt-3 mt-sm-0 px-3 pb-3">
+              <a
+                href="https://www.imandaran.com/wp-content/uploads/2020/04/%D8%A7%D9%86%D8%AC%DB%8C%D9%84-%D8%AA%D8%B1%D8%AC%D9%85%D9%87%D9%94-%D8%AA%D9%81%D8%B3%DB%8C%D8%B1%DB%8C.pdf"
+                target="_blank"
+              >
+                <button class="btn btn-info w-100 rounded-pill py-2 fs-1">
+                  قرائة الكتاب
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-right mt-5">
+        <div class="book__desc p-3">
+          <h2>معرفی کتاب ایستاده در آتش</h2>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+            صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+            روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+            می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
+            فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+            فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+            موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+            نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+            موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن ساختگی با
+            تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+            و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت
+            که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+            رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد.
+          </p>
+        </div>
+        <div class="book-video col-12 mt-3 p-2">
+          <!-- <div id="59094480444"><script type="text/JavaScript" src="https://www.aparat.com/embed/ObgIB?data[rnddiv]=59094480444&data[responsive]=yes&titleShow=true"></script></div> -->
+          <video
+            id="my-video"
+            class="video-js responsive-video"
+            controls
+            preload="auto"
+            poster="../assets/images/93480.jpg"
+            data-setup="{}"
+            style="max-height: 800px !important; object-fit: cover"
+          >
+            <source
+              src="../assets/videos/istockphoto-1326011209-640_adpp_is.mp4"
+              type="video/mp4"
+            />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+        <div class="book__desc mt-3 p-3">
+          <h2>کتاب ایستاده در آتش چه اقباس هایی دارد؟</h2>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+            صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+            روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+            می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
+            فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+            فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+            موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+            نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+            موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن ساختگی با
+            تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+            و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت
+            که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+            رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد.
+          </p>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+            صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+            روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+            می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
+            فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+            فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+            موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+            نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+            موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن ساختگی با
+            تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+            و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت
+            که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+            رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5 text-right">
+        <div class="book__comments col-12">
+          <h2 class="mb-3">تعليقات</h2>
+          <div class="comments-registered mb-0 col-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="wrapper-comment-user my-3"
+                  style="margin-bottom: 0 !important"
+                >
+                  <p class="user-name m-0 pr-1">علی محمدی</p>
+                  <p class="comment m-0 my-2 pr-2">
+                    المقال كان شاملا وكا ا جدا شكرا لك على النشر ا جدا شكرا لك
+                    على النشر ا جدا شكرا لك على النشر ا جدا شكرا لك على النشر
+                    ملا جدا شكرا لك على النشر
+                  </p>
+                  <div class="other-comment mr-auto other-comment-custom p-2">
+                    <div class="p-1">
+                      <div class="answer-comment text-left py-1 px-2">
+                        <i class="fa-regular fa-comments pl-2"></i>الرد على هذا
+                        التعليق
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="wrapper-comment-user px-0 my-3"
+                  style="margin-bottom: 0 !important"
+                >
+                  <p class="user-name m-0 pr-1">محسن محمدی</p>
+                  <p class="comment m-0 my-2 pr-2">
+                    المقال كان شاملا وكاملا جدا شكرا لك على النشر المقال كان
+                    شاملا وكاملا جدا شكرا لك على النشر المقال كان شاملا وكاملا
+                    جدا شكرا لك على النشر جدا شكرا لك على النشر
+                  </p>
+                  <div class="other-comment mr-auto other-comment-custom p-2">
+                    <div class="p-1">
+                      <div class="answer-comment text-left py-1 px-2">
+                        <i class="fa-regular fa-comments pl-2"></i>الرد على هذا
+                        التعليق
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="wrapper-comment-user px-0 my-3"
+                  style="margin-bottom: 0 !important"
+                >
+                  <p class="user-name m-0 pr-1">مهدی غلامی</p>
+                  <p class="comment m-0 my-2 pr-2">
+                    المقال كان شاملا وكاملا جدا شكرا لك على النشر المقال كان
+                    شاملا وكاملا جدا شكرا لك على النشر المقال كان شاملا وكاملا
+                    جدا شكرا لك على النشر المقال كان شاملا وكاملا جدا شكرا لك
+                    على النشر المقال كان
+                  </p>
+                  <div class="other-comment mr-auto other-comment-custom p-2">
+                    <div class="p-1">
+                      <div class="answer-comment text-left py-1 px-2">
+                        <i class="fa-regular fa-comments pl-2"></i>الرد على هذا
+                        التعليق
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="wrapper-comment-user px-0 my-3"
+                  style="margin-bottom: 0 !important"
+                >
+                  <p class="user-name m-0 pr-1">محمد محمدی</p>
+                  <p class="comment m-0 my-2 pr-2">
+                    المقال كان شالمقال كان شاملا وكاملا جدا شكرا لك على النشر
+                    المقال كان شاملا وكاملا جدا شكرا لك على النشر المقال كان
+                    شاملا وكاملا جدا شكرا لك على النشر املا وكاملا جدا شكرا لك
+                    على النشر
+                  </p>
+                  <div class="other-comment mr-auto other-comment-custom p-2">
+                    <div class="p-1">
+                      <div class="answer-comment text-left py-1 px-2">
+                        <i class="fa-regular fa-comments pl-2"></i>الرد على هذا
+                        التعليق
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="book__reading fix position-fixed d-sm-none top-0 start-0 mt-3 mt-sm-0 px-3 pb-3"
+        style="
+          bottom: 0;
+          width: 100%;
+          left: 0;
+          right: 0;
+          background: linear-gradient(0deg, #fff, #ffffffba);
+          padding-top: 12px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 300ms ease;
+        "
+      >
+        <a
+          href="https://www.imandaran.com/wp-content/uploads/2020/04/%D8%A7%D9%86%D8%AC%DB%8C%D9%84-%D8%AA%D8%B1%D8%AC%D9%85%D9%87%D9%94-%D8%AA%D9%81%D8%B3%DB%8C%D8%B1%DB%8C.pdf"
+          target="_blank"
+        >
+          <button class="btn btn-info w-100 rounded-pill py-2 fs-1">
+            خواندن کتاب
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <footer
+      dir="rtl"
+      class="w-100 d-md-block second-main-crl text-right px-3 mt-5"
+    >
+      <small>جميع حقوق هذه المنصة مملوكة لـ ...</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.min.js"></script>
+    <script src="../../dist/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/assets/plugins/owl.carousel.min.js"></script>
+    <script src="../../dist/assets/plugins/slick.min.js"></script>
+    <script src="../../dist/assets/js/main.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        ConvertNumberToPersion();
+      });
+
+      function ConvertNumberToPersion() {
+        persian = {
+          0: '۰',
+          1: '۱',
+          2: '۲',
+          3: '۳',
+          4: '۴',
+          5: '۵',
+          6: '۶',
+          7: '۷',
+          8: '۸',
+          9: '۹',
+        };
+        function traverse(el) {
+          if (el.nodeType == 3) {
+            var list = el.data.match(/[0-9]/g);
+            if (list != null && list.length != 0) {
+              for (var i = 0; i < list.length; i++)
+                el.data = el.data.replace(list[i], persian[list[i]]);
+            }
+          }
+          for (var i = 0; i < el.childNodes.length; i++) {
+            traverse(el.childNodes[i]);
+          }
+        }
+        traverse(document.body);
+      }
+    </script>
+  </body>
+</html>

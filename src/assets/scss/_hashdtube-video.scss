@@ -1,0 +1,15 @@
+.hashdtube__video {
+    .hashdtube__video__title {
+        font-size: clamp(1rem, 2.5vw, 3rem);
+    }
+    .hashdtube__video__name {
+        font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+    @media screen and (max-width: 768px) {
+        .comments-registered {
+            .wrapper-comment-user {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}

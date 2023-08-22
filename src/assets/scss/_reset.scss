@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import '_varibles';
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    @extend *;
+  }
+}
+
+@font-face {
+  font-family: Hacen;
+  src: url('../fonts/ArbFONTS-Hacen-Trarza-Hd.ttf') format('ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: IranSans;
+  src: url('../fonts/IRANSansWeb.eot');
+  src: url('../fonts/IRANSansWeb.woff') format('woff'),
+    url('../fonts/IRANSansWeb.woff2') format('woff2'),
+    url('../fonts/IRANSansWeb_Black.eot') format('eot'),
+    url('../fonts/IRANSansWeb_Black.woff') format('woff'),
+    url('../fonts/IRANSansWeb_Bold.eot') format('eot'),
+    url('../fonts/IRANSansWeb_Bold.ttf') format('ttf'),
+    url('../fonts/IRANSansWeb_Bold.woff') format('woff'),
+    url('../fonts/IRANSansWeb_Bold.woff2') format('woff2');
+  font-style: normal;
+}
+
+body {
+  line-height: 1.6;
+  font-family: IranSans;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ol,
+ul,
+li {
+  list-style-type: none !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// custom styles
+.custom-title-contents {
+  font-family: IranSans;
+  color: $text-crl;
+  font-size: 18px;
+  font-weight: bold;
+  &::before {
+    content: '•';
+    font-size: 1.6rem;
+    color: $main-crl;
+    vertical-align: -6px;
+    padding: 0 5px 0 5px;
+  }
+}
+
+.video-js {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.section-desktop {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+}
+
+.over-lay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(211, 211, 211);
+  background-color: rgba($color: #fff, $alpha: 0.75);
+  color: #000;
+  font-size: clamp(16px, 2.4vw, 3rem);
+  font-weight: bold;
+  padding: 4px 18px;
+  text-align: center;
+  border-radius: 6px;
+}
+.custom-over-lay-title {
+  font-size: clamp(13px, 1.3vw, 1.4rem) !important;
+  padding: 0 !important;
+  width: calc(100% - 40%);
+  color: #fff;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.margin-bottom {
+  margin-bottom: 1px !important;
+}
+.active-nav {
+  a {
+    color: blue !important;
+  }
+}
+
+.no-gap {
+  gap: 0 !important;
+}
+
+.page-item {
+  &:not(:first-child, :last-child) {
+    .page-link {
+      border: none;
+    }
+  }
+  &:first-child,
+  &:last-child {
+    .page-link {
+      border: 2px solid #d8d8d8;
+      border-radius: 5px;
+      padding: 5px 7px 4px;
+    }
+  }
+  .page-link {
+    color: $black-crl;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: #6a994e;
+  border-color: #6a994e;
+  color: #fff;
+  border-radius: 5px;
+}
+
+// centering classes
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}

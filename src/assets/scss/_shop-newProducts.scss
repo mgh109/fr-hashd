@@ -1,0 +1,95 @@
+.new-products {
+  .product-slider {
+    .item {
+      border: 1px solid #d8d8d8;
+      border-radius: 10px;
+      padding-inline: 10px;
+      height: 247px;
+      color: $black-crl;
+
+      &:not(:first-child) {
+        .footer-item {
+          margin-top: 2.3rem;
+        }
+      }
+      &:first-child {
+        .footer-item {
+          margin-top: -0.1rem;
+        }
+      }
+
+      .name-item {
+        font-size: 14px;
+      }
+
+      .img-item {
+        img {
+          height: 137px;
+        }
+      }
+    }
+  }
+}
+.footer-item {
+  // margin-bottom: -1.5rem!important;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+.shop {
+  button.slick-prev,
+  button.slick-next {
+    display: none !important;
+  }
+}
+
+// @media screen and (min-width: 900px) {
+//   // .shop {
+//   //     button.slick-prev, button.slick-next {
+//   //         display: block!important;
+//   //         // position: relative;
+//   //         // width: 0;
+//   //         // height: 0;
+//   //         // span {
+//   //         //     &::before {
+//   //         //         content: '→';
+//   //         //         font-size: 3rem;
+//   //         //         position: absolute;
+//   //         //         top: 1rem;
+//   //         //         right: 1rem;
+
+//   //         //     }
+//   //         // }
+//   //     }
+//   // }
+//   .new-products {
+//     position: relative;
+//     button.slick-prev,
+//     button.slick-next {
+//       display: block !important;
+//       top: -1.7rem;
+//       right: 8rem;
+//       border-right-color: $green-crl;
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         border-top: 14px solid transparent;
+//         border-right: 13px solid #ffffff!important;
+//         border-bottom: 14px solid transparent;
+//         left: .8rem;
+//         top: -.85rem;
+//         z-index: 12;
+//       }
+//     }
+//     button.slick-next {
+//       right: 12rem;
+//     }
+//   }
+// }
+// →
+// ←

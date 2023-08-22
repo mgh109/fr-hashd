@@ -1,0 +1,35 @@
+$main-crl: #3b483f;
+$black-crl: #707070;
+$lightDark-crl: #adadad;
+$green-crl: #6a994e;
+$hover-crl: #964530;
+$text-crl: #4a4a4a;
+$gray-crl: #939393;
+$red-crl: #b10000;
+$second-main-crl: #efefef;
+
+// Lib Carousel
+$gutter: 10px;
+$bg: white;
+$dark: #212121;
+$darkest: #121212;
+$green: #1cff65;
+$maxwidth: 990px;
+$colsBigDesktop: 4;
+$colsSmallDesktop: 3;
+
+$color_1: #222;
+$color_2: white;
+$color_3: #fff;
+$background-color_1: green;
+$background-color_2: #7cff7c;
+
+$color_1: #222;
+$font-family_1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.second-main-crl {
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  color: $text-crl;
+}

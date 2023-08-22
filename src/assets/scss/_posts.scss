@@ -1,0 +1,61 @@
+.posts-wrapper {
+    margin-bottom: 4rem;
+    .card {
+        border: 1px solid #d8d8d8!important;
+        .row {
+            background-color: #f5f5f5;
+            .left-card {
+                text-align: right;
+                .card-body {
+                    padding: 8px 20px 5px 5px;
+                    .over-viwe {
+                        color: $gray-crl;
+                        font-size: 14px;
+                        span {
+                            font-family: sans-serif;
+                        }
+                    }
+                }
+                
+                p.card-title {
+                    font-family: Yekan;
+                    font-size: 1.2rem;
+                }
+                p.card-text {
+                    font-size: 13px;
+                    color: #333;
+                }
+            }
+    
+            .right-card {
+                img {
+                    height: 100%;
+                    border-radius: 10px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .posts-wrapper {
+        margin-bottom: 0!important;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .posts-wrapper {
+        .over-viwe {
+            font-size: 1.05rem!important;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .posts-wrapper {
+        .right-card {
+            order: -1;
+        }
+    }
+}

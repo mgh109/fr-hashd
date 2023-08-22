@@ -1,0 +1,75 @@
+.shop-navbar-desktop {
+  width: 100% !important;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  .user {
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $green-crl;
+        border: 2px solid #f9f9f9;
+        border-radius: 50%;
+        position: absolute;
+        top: 2.9rem;
+        left: 2.7rem;
+    }
+  }
+  .right-nav {
+    div {
+      a,
+      i {
+        color: $red-crl;
+        cursor: pointer;
+      }
+      .cart-link {
+        div {
+          width: 18px !important;
+          height: 18px !important;
+          font-size: 11px;
+          top: 0 !important;
+          left: 0.75rem !important;
+        }
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  .left-nav {
+    .logo {
+      width: 45px;
+    }
+    .search-box {
+      font-size: 1.1rem;
+      i {
+        right: 0.8rem;
+      }
+      input {
+        height: 35px;
+        padding-right: 2.5rem;
+        background-color: #fff;
+      }
+    }
+  }
+  .wrapper-item {
+    color: $black-crl;
+    ul {
+      gap: 20px;
+      li {
+        a {
+          font-size: 14px;
+          color: $black-crl;
+        }
+      }
+    }
+    .date {
+      time {
+        font-size: 12px;
+      }
+    }
+  }
+  .active-item {
+    color: $green-crl!important;
+  }
+}

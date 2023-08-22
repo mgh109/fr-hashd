@@ -1,0 +1,94 @@
+.bestselling-product {
+    background-color: $green-crl;
+    padding-block: 15px;
+    .bestSelling-slider {
+        .item {
+            padding: 10px;
+            margin-right: .7rem;
+            div.test {
+                top: 7%;
+                left: 50%;
+                transform: translate(-50%,50%);
+                h2,a {
+                    color: #fff;
+                }
+                h2 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+            .item-custom {
+                background-color: #fff;
+                border-radius: 10px;
+                .details-items {
+                    p {
+                        font-size: 13.3px;
+                        color: $black-crl;
+                    }
+                }
+                .footer-item {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                &:last-child {
+                    .img-item,.details-items,.footer-item {
+                        visibility: hidden;
+                    }
+                    .all {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                        a {
+                            color: $green-crl;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .bestselling-product {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 110px;
+            background: rgb(106,153,78);
+            background: linear-gradient(270deg, rgba(106,153,78,0.34506302521008403) 0%, rgba(106,153,78,0.017331932773109293) 0%, rgba(106,153,78,0.9417016806722689) 100%);
+            z-index: 3;
+        }
+    }
+    .bestSelling-slider {
+        position: relative;
+        h2 {
+            font-size: 2.6rem!important;
+        }
+        button.slick-prev,
+        button.slick-next {
+            display: block!important;
+            left: 2rem;
+            border-top: 14px solid transparent;
+            border-right: 13px solid #fff;
+            border-bottom: 14px solid transparent;
+            z-index: 5;
+            &::before {
+                content: '';
+                display: none;
+            }
+        }
+        button.slick-prev {
+            display: none;
+            // right: 10.7rem;
+            // transform: rotate(-180deg);
+        }
+    }
+}

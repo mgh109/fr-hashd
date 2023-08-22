@@ -1,0 +1,65 @@
+.content {
+  .wrapper {
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    padding: 10px;
+    .content-title,
+    .details {
+      color: $black-crl;
+    }
+    .content-title {
+        small {
+            color: #a8a8a8;
+        }
+    }
+  }
+}
+
+.lastest-articles {
+    .title {
+        p {
+            color: $black-crl;
+        }
+    }
+    .card-products {
+        .card-img {
+            img {
+                border-radius: 50%;
+                // width: 113px;
+                display: block;
+                // height: 114px;
+                object-fit: cover;
+            }
+        }
+        .card-body {
+            .card-title {
+                margin-bottom: 40px;
+                font-size: 16px;
+            }
+        }
+        .footer-item {
+            p {
+                &:first-child {
+                    font-size: 13px;
+                }
+                &:last-child {
+                    color: $green-crl;
+                }
+            }
+        }
+    }
+}
+
+.banners {
+    .title {
+        p {
+            color: $black-crl;
+        }
+    }
+    .wrapper-banner {
+        border: 1px solid #d8d8d8;
+        padding: 10px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+}

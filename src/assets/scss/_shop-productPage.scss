@@ -1,0 +1,214 @@
+.container-fluid {
+  margin-block: 5rem 11rem;
+  color: $black-crl;
+  .product-picture {
+    #gallery {
+      border: 1px solid $black-crl;
+      border-radius: 10px;
+      padding: 20px;
+      min-height: fit-content;
+      .zoom-main {
+        span {
+          border: none;
+          background-image: none !important;
+          img {
+            width: 220px !important;
+            height: 200px;
+          }
+        }
+      }
+      .zoom-thumb {
+        height: fit-content;
+      }
+      .zoom-click {
+        width: 50px;
+        height: 50px !important;
+        border-radius: 5px;
+      }
+      .active-img {
+        border: 2px solid $green-crl;
+      }
+    }
+
+    .favorite {
+      top: 1rem;
+      left: 1rem;
+      z-index: 1;
+      i {
+        font-size: 1.5rem;
+        color: $black-crl;
+      }
+      i.fa-solid.favorite-toggle {
+        color: #f86814;
+      }
+    }
+    .product-title {
+      margin-top: 12px;
+    }
+    .atttibute {
+      margin-top: 8px;
+      ul {
+        padding-right: 30px;
+        li {
+          list-style-type: disc !important;
+          color: $lightDark-crl;
+          span {
+            color: $black-crl;
+          }
+        }
+      }
+    }
+  }
+  .add-cart {
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    padding: 17px;
+    background-color: #fff;
+    bottom: 4.7rem;
+    width: calc(100% - 32px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 
+    30px 13px 0 20px #fff,
+    -30px 13px 0 20px #fff;
+    .cart {
+      background-color: $green-crl;
+      padding: 10px 16px;
+      cursor: pointer;
+      border-radius: 7px;
+      div,i {
+        background-color: $green-crl;
+        color: #fff;
+        border: none;
+        outline: none;
+      }
+    }
+    span {
+      color: $green-crl;
+      font-size: 18px;
+    }
+  }
+  div {
+    .title {
+      p {
+        font-size: 16px;
+        font-weight: 600;
+        color: $black-crl;
+      }
+    }
+  }
+  .more {
+    color: $green-crl;
+    cursor: pointer;
+    i {
+      padding-left: 0.5rem;
+      font-size: 14px;
+    }
+  }
+  .comments-registered {
+    p {
+      color: $black-crl;
+      font-size: 17px;
+    }
+    .other-comment-custom {
+      width: fit-content;
+    }
+    .wrapper-comment-user-answer {
+      * {
+          color: $green-crl;
+      }
+      .user-name {
+          background-color: #f1f5ee!important;
+          
+      }
+      .other-comment {
+          div {
+              background-color: #f1f5ee!important;
+          }
+          .answer-comment {
+            color: $green-crl;  
+          }
+      }
+    }
+  }
+  .comments {
+    form {
+      label {
+        font-size: 17px;
+        color: $black-crl;
+      }
+    }
+  }
+}
+
+
+.breadcrumb {
+  background-color: #fff;
+  a {
+    color: $black-crl!important;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .container-fluid {
+    .product-picture {
+      .favorite {
+        top: 2rem;
+        left: -1rem;
+      }
+      #gallery {
+        border: none;
+        padding: 15px;
+        width: 110%;
+        .zoom-main {
+          border-radius: 10px;
+          padding: 10px 10px 10px 15px;
+          border: 1px solid $black-crl;
+          height: auto!important;
+          margin-right: 1rem;
+          width: 100%;
+          span {
+            display: grid;
+            place-content: center;
+            padding: 10px;
+            padding-left: 3rem;
+            img {
+              // max-width: 300px;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .zoom-thumb {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .zoom-click {
+            width: 70px;
+            height: auto!important;
+          }
+        }
+      }
+
+    }
+    .add-cart {
+      position: absolute!important;
+      bottom: 20.5rem;
+      // top: 1rem;
+      left: -29%;
+      box-shadow: none;
+      font-size: 14px;
+      padding: 10px;
+      border-color: #d8d8d8;
+      .cart {
+        width: 100%;
+        padding-block: 5px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.articles {
+    .wrapper-content {
+        .item {
+            border: 1px solid #d8d8d8;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            .name-item {
+                p {
+                    font-size: 14px;
+                }
+            }
+            .footer-item {
+                p {
+                    &:first-child {
+                        color: $black-crl;
+                    } 
+                    &:last-child {
+                        color: $green-crl;
+                    }
+                }
+            }
+        }
+    }
+}

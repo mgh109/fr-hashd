@@ -1,0 +1,76 @@
+.fix-footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background-color: #ede8e8!important;
+    height: 65px;
+    // border-top: 1px solid rgb(209, 209, 209)!important;
+    a {
+        width: 100%;
+        color: $text-crl;
+        &:nth-child(2) {
+            span {
+                font-size: 2rem;
+            }
+        }
+        .footer-icons {
+            height: 20px;
+            span {
+                font-size: 1.9rem;
+            }
+        }
+        div.foo-1,div.foo-2,div.foo-3 {
+            font-size: 13px!important;
+            font-weight: 600;
+            box-sizing: content-box!important;
+            width: 100%!important;
+        }
+        .badge {
+            position: absolute;
+            top: 6px;
+            width: 25px;
+            height: 20px;
+            display: grid;
+            place-content: center;
+            left: 10px;
+            z-index: 100;
+            font-size: 1rem;
+            padding: .2rem;
+        }
+        .custom-badge-mobile {
+            left: 13px;
+        }
+    }
+    .active-footer {
+        height: 100%;
+        background-color: $main-crl;
+        border-radius: 7px;
+        color: #fff;
+        border: 3px solid rgb(255, 255, 255);
+        border-bottom: none!important;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -18px;
+            width: 15px;
+            height: 15px;
+            background-color: #ede8e8!important;
+            border-top-right-radius: 5px;
+            box-shadow: 3px -2px 2px 0 #fff;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -18px;
+            width: 15px;
+            height: 15px;
+            background-color: #ede8e8;
+            border-top-left-radius: 5px;
+
+            box-shadow: -3px -2px 2px 0 #fff;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+section.favorites {
+    .row {
+        div {
+            padding-inline: 10px;
+            div.card {
+                border-radius: 10px;
+                .card-wrapper {
+                    padding: 10px ;
+                    div {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    .footer-item {
+                        cursor: pointer;
+                        a {
+                            padding: 6px 16px;
+                            background-color: $green-crl;
+                            color: #fff;
+                            border-radius: 7px;
+                            font-size: 15px;
+                        }
+                        div {
+                            background-color: $red-crl;
+                            color: #fff;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

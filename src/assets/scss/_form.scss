@@ -1,0 +1,111 @@
+.container-form {
+    max-width: 350px;
+    color: $text-crl;
+    img {
+        width: 130px;
+    }
+    h5 {
+        font-size: 1.1rem;
+        font-family: Yekan;
+        font-weight: 600;
+        color: $text-crl;
+    }
+    p {
+        font-size: 14px;
+    }
+    .form {
+        label {
+            margin-bottom: -5px!important;
+            color: $text-crl;
+            font-family: Yekan;
+            font-weight: 600;
+            &::before {
+                content:"•";
+                font-size: 1.6rem;
+                vertical-align: -6px;
+                padding-inline: .1rem .5rem;
+                color: $main-crl;
+            }
+        }
+        .input-group {
+            .user-icon {
+                top: -3px;
+                right: 0;
+                z-index: 1;
+                font-size: 1.4rem;
+                color: $main-crl;
+                i {
+                    border-left: 1px solid #9a9a9a;
+                }
+            }
+            .lock-icon {
+                top: -1px;
+                right: 0;
+                z-index: 1;
+                font-size: 1.4rem;
+                color: $main-crl;
+                span {
+                    border-left: 1px solid #9a9a9a;
+                }
+            }
+            input {
+                box-shadow: none;
+                height: 40px;
+                background-color: rgb(247, 247, 247);
+                z-index: 0;
+                &::-webkit-input-placeholder {
+                    font-size: 13px;
+                }
+            }
+        }
+        .btn {
+            background-color: $main-crl;
+            a {
+                color: #efefee;
+            }
+        }
+        .forget-pass {
+            font-size: 12.5px;
+            color: rgb(130, 130, 130);
+            a {
+                color: #ff0000;
+            }
+        }
+        .wrapper-remember {
+            label {
+                margin: 0 0 0.3rem!important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container-form {
+        background-color: #efefef;
+        border: 1px solid #ccc;
+        img {
+            width: 110px;
+        }
+        form {
+            label {
+                font-size: 13px;
+                font-family: Yekan;
+                &::before {
+                    display: none;
+                }
+            }
+            input {
+                height: 35px!important;
+                &::-webkit-input-placeholder {
+                    font-size: 12px!important;
+                }
+            }
+            div {
+                a {
+                    color: #ff3c3c;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,30 @@
+.wrapper-services {
+    margin-block: 5.5rem 3rem;
+    .card-service {
+        border-radius: 40px;
+        cursor: pointer;
+        margin-inline: .5rem;
+        div {
+            span {
+                font-size: 4rem;
+                color: $main-crl;
+                transition: 400ms;
+            }
+        }
+        div {
+            a {
+                color: $main-crl;
+                font-size: 1rem;
+                font-weight: 600;
+                transition: 200ms;
+            }
+        }
+        &:hover {
+            div {
+                * {
+                    color: $hover-crl;
+                }
+            }
+        }
+    }
+}
